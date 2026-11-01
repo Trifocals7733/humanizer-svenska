@@ -20,6 +20,8 @@ Implementerade en dedikerad "Anti-AI Engine" mot detektorer (burstiness, V2-fund
 ### Added
 
 **Universellt stöd & plattformsadaptrar (`platforms/`):**
+- **AGENTS.md:** Skapade officiell `AGENTS.md` i enlighet med öppna standarder från Agentic AI Foundation (AAIF) för universellt stöd i alla kodningsagenter.
+- **skills.sh:** Lade till officiell badge och installationsinstruktioner för Vercel Labs `skills` CLI (`npx skills add Trifocals7733/humanizer-svenska`).
 - **Pi Agents:** Fullt stöd för Mario Zechners minimalistiska terminalagent (`platforms/pi/README.md`) med instruktioner för sessionsanrop och `AGENTS.md`.
 - **ChatGPT & Custom GPTs / Gemini Gems:** Högdensitets systemprompt optimerad för tokenbegränsningar (`platforms/chatgpt/system-prompt.md`).
 - **Cursor & Windsurf:** Färdig Cursor-regel i modernt MDC-format (`platforms/cursor/humanizer.mdc`).

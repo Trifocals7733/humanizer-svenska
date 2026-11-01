@@ -1,5 +1,7 @@
 # 🇸🇪 Humanizer på Svenska
 
+[![skills.sh](https://skills.sh/b/Trifocals7733/humanizer-svenska)](https://skills.sh/Trifocals7733/humanizer-svenska)
+
 > **Universal Swedish text humanizer for removing AI-generated writing patterns from professional Swedish text.**  
 > Built from the ground up for the Swedish language. 100% pure, portable Markdown. Compatible with terminal coding agents (**Pi Agents**, Claude Code), editor rules (**Cursor**, **Windsurf**), chat models (**ChatGPT**, **Claude.ai**, **Gemini**), and **GitHub Copilot**.  
 > 
@@ -37,6 +39,12 @@ De flesta AI-humanizers och prompt-instruktioner är utvecklade för engelska. N
 ## Snabbstart per plattform
 
 Projektet består av ren Markdown och fungerar i alla utvecklingsmiljöer:
+
+### Universal installation via skills.sh CLI
+Installera skillen direkt i dina kompatibla agenter med ett enda kommando:
+```bash
+npx skills add Trifocals7733/humanizer-svenska
+```
 
 ### 1. Pi Agents (Terminal AI Agent)
 Be Pi läsa `SKILL.md` direkt i sessionen:
