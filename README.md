@@ -5,11 +5,9 @@
 **Universell öppen standard och regelsamling för att ta bort AI-mönster ur professionell svensk text.**
 
 [![skills.sh](https://skills.sh/b/Trifocals7733/humanizer-svenska)](https://skills.sh/Trifocals7733/humanizer-svenska)
-[![Version](https://img.shields.io/badge/version-3.0.0-10B981?style=flat-square)](./CHANGELOG.md)
 [![Språk](https://img.shields.io/badge/språk-svenska%20🇸🇪-005293?style=flat-square)](./SKILL.md)
 [![Pi Agents](https://img.shields.io/badge/Pi%20Agents-ready-7C3AED?style=flat-square)](./platforms/pi/README.md)
 [![Agent Skills](https://img.shields.io/badge/Agent%20Skills-compatible-blueviolet?style=flat-square)](./SKILL.md)
-[![Dependencies](https://img.shields.io/badge/dependencies-0%20(Pure%20Markdown)-black?style=flat-square)](./SKILL.md)
 [![Licens](https://img.shields.io/badge/licens-MIT-blue?style=flat-square)](./LICENSE)
 
 <p align="center">
