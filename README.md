@@ -1,11 +1,34 @@
+<div align="center">
+
 # 🇸🇪 Humanizer på Svenska
 
-[![skills.sh](https://skills.sh/b/Trifocals7733/humanizer-svenska)](https://skills.sh/Trifocals7733/humanizer-svenska)
+**Universell öppen standard och regelsamling för att ta bort AI-mönster ur professionell svensk text.**
 
-> **Universal Swedish text humanizer for removing AI-generated writing patterns from professional Swedish text.**  
-> Built from the ground up for the Swedish language. 100% pure, portable Markdown. Compatible with terminal coding agents (**Pi Agents**, Claude Code), editor rules (**Cursor**, **Windsurf**), chat models (**ChatGPT**, **Claude.ai**, **Gemini**), and **GitHub Copilot**.  
-> 
-> *Note: Since this tool is tailored specifically for Swedish prose and professional communication, the documentation below is written in Swedish.*
+[![skills.sh](https://skills.sh/b/Trifocals7733/humanizer-svenska)](https://skills.sh/Trifocals7733/humanizer-svenska)
+[![Version](https://img.shields.io/badge/version-3.0.0-10B981?style=flat-square)](./CHANGELOG.md)
+[![Språk](https://img.shields.io/badge/språk-svenska%20🇸🇪-005293?style=flat-square)](./SKILL.md)
+[![Pi Agents](https://img.shields.io/badge/Pi%20Agents-ready-7C3AED?style=flat-square)](./platforms/pi/README.md)
+[![Agent Skills](https://img.shields.io/badge/Agent%20Skills-compatible-blueviolet?style=flat-square)](./SKILL.md)
+[![Dependencies](https://img.shields.io/badge/dependencies-0%20(Pure%20Markdown)-black?style=flat-square)](./SKILL.md)
+[![Licens](https://img.shields.io/badge/licens-MIT-blue?style=flat-square)](./LICENSE)
+
+<p align="center">
+  <em>Universal Swedish text humanizer. Built from the ground up for the Swedish language in 100% pure Markdown.<br/>
+  Compatible with <strong>Pi Agents</strong>, <strong>Claude Code</strong>, <strong>Cursor</strong>, <strong>ChatGPT</strong>, and <strong>Copilot</strong>.</em>
+</p>
+
+</div>
+
+---
+
+### ⚡ Snabbtitt: Före och efter
+
+| ❌ Typisk AI-genererad svenska | ✅ Humaniserad professionell svenska |
+|---|---|
+| *"I en alltmer digitaliserad värld är det avgörande att organisationer proaktivt tar ägarskap över sina processer. Vår innovativa helhetslösning utgör ett banbrytande verktyg som möjliggör en sömlös integration och skapar mervärde i linje med framtidens krav."* | *"Vi kortade orderhanteringen från tre dagar till 20 minuter genom att koppla ihop Visma direkt med lagersystemet. Inga nya konsulter, bara ett API som synkar var femte minut."* |
+
+> [!TIP]
+> **Varför reagerar AI-detektorer och läsare?** Det beror sällan på enstaka ord. AI-text avslöjas framför allt av **monoton meningslängd** (alla meningar är 15–20 ord långa), **stel meningsbyggnad** (80 % av meningarna börjar med Subjekt + Verb) och **engelska tankstreck (`—`)**. Standarden tvingar fram naturlig rytm och äkta svenskt språkflöde.
 
 ---
 
@@ -107,6 +130,11 @@ Standarden tvingar därför modellen att följa fem strukturella principer:
 
 Huvuddokumentet [`SKILL.md`](./SKILL.md) innehåller fullständiga instruktioner för att identifiera och åtgärda 22 specifika AI-mönster:
 
+<details open>
+<summary><strong>📋 Klicka här för att visa/dölja mönsteröversikten</strong></summary>
+
+<br/>
+
 | # | Mönster | Exempel / Trigger |
 |---|---|---|
 | 1 | **Signifikansuppblåsning** | "banbrytande", "avgörande", "paradigmskifte", "vittnar om" |
@@ -131,6 +159,8 @@ Huvuddokumentet [`SKILL.md`](./SKILL.md) innehåller fullständiga instruktioner
 | 20 | **"Låt oss djupdyka"** | Föreläsaraktiga metakommentarer där AI kommenterar sitt skrivande |
 | 21 | **Syntetisk tröst & empati** | "Vi förstår att detta kan kännas överväldigande..." |
 | 22 | **Falsk sammanfattningsfeber** | Tvingande rubriker ("Slutsats:") i korta texter under 300 ord |
+
+</details>
 
 ---
 
@@ -163,6 +193,11 @@ I katalogen [`examples/`](./examples/) hittar du fullständiga genomgångar med 
 ---
 
 ## Snabbreferens för ord- och frasbyten
+
+<details>
+<summary><strong>🔍 Klicka här för att öppna den kompletta listan med 36 ord- och frasbyten</strong></summary>
+
+<br/>
 
 | AI-svenska | Ersätt med naturlig svenska |
 |---|---|
@@ -203,6 +238,8 @@ I katalogen [`examples/`](./examples/) hittar du fullständiga genomgångar med 
 | tankstreck mitt i meningar (`—`) | använd punkt eller kommatecken |
 | dekorativa emojis (🚀, 💡, ✅) | stryk |
 
+</details>
+
 ---
 
 ## Testa med färdiga benchmarks
@@ -212,6 +249,7 @@ Kör testtexterna i [`tests/benchmark_prompts.md`](./tests/benchmark_prompts.md)
 
 ---
 
-## Versionshistorik
+## Licens & Versionshistorik
 
-Fullständig dokumentation av ändringar och versioner finns i [`CHANGELOG.md`](./CHANGELOG.md).
+- **Licens:** [MIT License](./LICENSE)
+- **Ändringslogg:** Fullständig historik finns i [`CHANGELOG.md`](./CHANGELOG.md).
