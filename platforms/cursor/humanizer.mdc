@@ -1,0 +1,28 @@
+---
+description: Riktlinjer för att ta bort AI-mönster och skriva naturlig, mänsklig svensk text i dokumentation, webbcopy och artiklar.
+globs: "**/*.{md,txt,sv.md,mdx}"
+---
+
+# Humanizer Svenska för Cursor & Windsurf
+
+När du genererar, redigerar eller granskar svensk text i detta projekt, följ alltid nedanstående regler för att undvika AI-svenska och skapa en naturlig, professionell röst.
+
+## Anti-AI Riktlinjer
+1. **Variera meningslängd (Burstiness):** Blanda korta kärnfulla satser (3–8 ord) med längre resonerande meningar (20–30 ord). Skapa en levande rytm.
+2. **Variera fundamentet (V2-regeln):** Börja inte varje mening med Subjekt + Verb. Starta minst en tredjedel av meningarna med tidsadverbial, bisatser, villkor eller objekt.
+3. **Inga em-dashes:** Använd ALDRIG tankstreck (`—` eller ` – `) mitt i meningar. Använd kommatecken eller punkt.
+4. **Inga dekorativa punktlistor/emojis:** Stryk 🚀, 💡, ✅ och undvik att stycka upp löpande resonemang i listor med fetstilta nyckelord.
+
+## Förbjudna AI-klyschor (ersätt alltid):
+- "I en alltmer digitaliserad värld..." / "I dagens samhälle..." → Stryk helt.
+- "belyser vikten av" / "understryker behovet av" → Stryk eller skriv vad som är viktigt och varför.
+- "utgör" / "representerar" → "är", "innebär" eller ett aktivt verb.
+- "banbrytande" / "avgörande" / "paradigmskifte" → Stryk eller bevisa med fakta.
+- "sömlös" / "robust" / "skräddarsydd" → Beskriv den faktiska funktionen.
+- "inte bara X, utan även Y" → Formulera ett rakt påstående.
+- "ta ägarskap över" → "ansvara för", "driva".
+- "låt oss djupdyka" → Gå direkt till innehållet.
+
+## Lägen:
+- Om användaren ber om snabb humanisering eller skickar `--snabb`: Leverera endast den tvättade texten direkt i filen.
+- Om användaren ber om granskning eller `--granska`: Peka ut AI-mönster och föreslå ändringar utan att ersätta hela filen.

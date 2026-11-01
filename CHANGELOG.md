@@ -7,6 +7,72 @@ Versioning follows [Semantic Versioning](https://semver.org/).
 
 ---
 
+## [3.0.0] - 2026-11-01
+
+### Summary
+
+Universell omvandling och stor innehållsuppgradering. Gjorde standarden 100 % plattformsoberoende i ren Markdown med explicit stöd för minimalistiska terminalagenter (Pi Agents), kodredigerare (Cursor, Windsurf), chattgränssnitt (ChatGPT, Claude, Gemini) och GitHub Copilot. 
+
+Implementerade en dedikerad "Anti-AI Engine" mot detektorer (burstiness, V2-fundamentvariation, perplexity, typografisk sanering) samt sex nya AI-mönster (17–22), fyra nya nischer (Klarspråk, E-handel, Rekrytering, Kunddialog) och tre flexibla arbetslägen.
+
+---
+
+### Added
+
+**Universellt stöd & plattformsadaptrar (`platforms/`):**
+- **Pi Agents:** Fullt stöd för Mario Zechners minimalistiska terminalagent (`platforms/pi/README.md`) med instruktioner för sessionsanrop och `AGENTS.md`.
+- **ChatGPT & Custom GPTs / Gemini Gems:** Högdensitets systemprompt optimerad för tokenbegränsningar (`platforms/chatgpt/system-prompt.md`).
+- **Cursor & Windsurf:** Färdig Cursor-regel i modernt MDC-format (`platforms/cursor/humanizer.mdc`).
+- **GitHub Copilot:** Workspace-instruktion för `.github/copilot-instructions.md` (`platforms/copilot/copilot-instructions.md`).
+- **Anthropic Claude:** Uppdaterad guide för Claude Code och Claude.ai Projects (`platforms/claude/README.md`).
+
+**Anti-AI Engine (Skydd mot detektorer och mänsklig granskning):**
+- **Radikal Burstiness:** Tvingande variation i meningslängd (ultrakorta 3–6 ord vs. längre 20–30+ ord) för att krossa AI:s jämntjocka rytm.
+- **Svensk V2-Fundamentvariation:** Aktiv växling av fundamentet (tidsadverbial, bisatser, villkor och objekt först) för att bryta subjekt-verb-monotonin.
+- **Perplexity-höjning:** Konkretionsprincip som ersätter generiska abstraktioner med specifika mätpunkter, siffror och domäntermer.
+- **Typografisk sanering:** Förbud mot engelska tankstreck (`—` eller ` – `) mitt i meningar samt radering av dekorativa emojis och punktlistfeber.
+
+**Nya AI-mönster (6):**
+- **Mönster 17: Tankstrecksfrossa (Em-dashes):** Detekterar och eliminerar direktimporterade engelska tankstreck som splittrar meningsbyggnaden.
+- **Mönster 18: "Inte bara X, utan även Y"-syndromet:** Avlägsnar klyschan som används för att simulera djup.
+- **Mönster 19: Moderna modord & säljfloskler:** Sanerar ord som "sömlös", "robust", "skräddarsydd", "spjutspets", "i framkant".
+- **Mönster 20: "Låt oss djupdyka" och metakommentarer:** Raderar föreläsaraktiga metakommentarer där AI kommenterar sitt eget skrivande.
+- **Mönster 21: Syntetisk tröst & empati:** Tar bort påklistrad terapeutisk ton i professionella texter.
+- **Mönster 22: Falsk sammanfattningsfeber:** Eliminerar mekaniska rubriker ("Slutsats:", "Viktiga lärdomar:") i korta texter under 300 ord.
+
+**Nya nischguider (`genres/`):**
+- `genres/klarsprak.md` – Förankrad i **Språklagen (2009:600) 11 §**, ISO 24495-1 och Språkrådets (ISOF) klarspråksprinciper.
+- `genres/e-handel.md` – Konkret kundnytta, material, mått och passform framför tomma amerikanska superlativ.
+- `genres/rekrytering.md` – Ärliga platsannonser och kravprofiler utan floskler som "spindeln i nätet" och "många bollar i luften".
+- `genres/kunddialog.md` – Saklig och snabb service med tydliga steg, utan överdriven servilitet.
+- `genres/affarstext.md`, `genres/rapport.md`, `genres/artikel.md`, `genres/sociala-medier.md` – Modulärt utbrutna och fördjupade guider för befintliga genrer.
+
+**Faktiska före/efter-exempel (`examples/`):**
+- Återskapade och kompletterade den saknade `examples/`-katalogen med sex fullständiga genomgångar:
+  - `examples/affarstext.md`
+  - `examples/rapport.md`
+  - `examples/artikel.md`
+  - `examples/sociala-medier.md`
+  - `examples/klarsprak.md`
+  - `examples/rekrytering.md`
+
+**Arbetslägen:**
+- Införde tre tydliga lägen: `--snabb` (snabbtvätt), Standard (med Anti-AI-reflektion) och `--granska` (redaktörscoach).
+
+**Testtexter:**
+- Skapade `tests/benchmark_prompts.md` för att utvärdera modeller och agenter.
+
+---
+
+### Changed
+
+- Versionsbump till 3.0.0.
+- `SKILL.md` rensad från Claude-specifik frontmatter (`allowed-tools: [AskUserQuestion]`) och anpassad till universella öppna agent-standarder.
+- Snabbreferenstabellen utökad till 36 vanliga AI-byten.
+- `README.md` helt omskriven med universell plattformsguide och moderna instruktioner.
+
+---
+
 ## [2.0.0] - 2026-03-18
 
 ### Summary
