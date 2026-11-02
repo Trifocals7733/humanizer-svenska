@@ -37,6 +37,8 @@ När skillen är installerad kan du anropa den direkt i chatten:
 Du kan även be Claude direkt:
 > *"Läs SKILL.md och humanisera rapporten i docs/sammanfattning.md"*
 
+Skillen är byggd för progressiv laddning. `SKILL.md` är ingången och beskriver arbetsgången. Claude läser `references/` bara när den behöver dem: `monster.md` för att namnge ett mönster, `svenska-ord.md` för ett konkret utbyte, `typografi.md` för formregler, `sjalvkontroll.md` före varje svar. Låt katalogen `references/` ligga kvar bredvid `SKILL.md`, annars tappar skillen halva sitt innehåll.
+
 ---
 
 ## 2. Claude.ai Projects (Webbgränssnitt)

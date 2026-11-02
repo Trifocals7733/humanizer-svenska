@@ -27,16 +27,19 @@ Om du har ett repo där Pi ofta skriver eller redigerar svensk text (t.ex. dokum
 ```markdown
 <!-- I din AGENTS.md -->
 ## Svensk språkvård & humanisering
-När du skriver eller redigerar svensk text, följ alltid riktlinjerna och mönsterkatalogen i `SKILL.md`:
-- Undvik de 22 AI-mönstren (inga landskapsinledningar, ingen signifikansuppblåsning, inga em-dashes).
+När du skriver eller redigerar svensk text, följ riktlinjerna och mönsterkatalogen i `SKILL.md`:
+- Rör aldrig sakuppgifter. Hitta aldrig på en siffra, ett datum eller en källa för att göra texten konkret.
+- Undvik de 33 AI-mönstren (inga landskapsinledningar, ingen signifikansuppblåsning, inga em-dashes, ingen ord-för-ord-svenska).
 - Variera meningslängder radikalt (hög burstiness).
 - Variera fundamentet enligt svensk syntax (börja inte varje mening med subjekt + verb).
+- Formreglerna i `references/typografi.md` är fel, inte stilfrågor.
+- Kör `references/sjalvkontroll.md` före du svarar.
 - För specifika texttyper, se fördjupning i katalogen `genres/`.
 ```
 
 ---
 
 ### Metod 3: Snabba kommandon med flaggor i Pi
-Tack vare lägesväljaren i v3.0 kan du styra utdatan exakt:
+Tack vare lägesväljaren kan du styra utdatan exakt:
 - **`--snabb`**: Pi returnerar endast den färdiga texten direkt, perfekt när du ber Pi uppdatera en befintlig fil med `edit`.
 - **`--granska`**: Pi pekar ut vilka AI-fällor texten innehåller utan att skriva om den.

@@ -9,7 +9,8 @@ Detta dokument tillhandahåller instruktioner och riktlinjer för alla AI-agente
 `humanizer-svenska` är en öppen, universell standard för att ta bort AI-genererade språkmönster ur professionell svensk text. Repositoriet är uppbyggt av **100 % ren, portabel Markdown** utan externa beroenden eller byggsteg.
 
 ### Filstruktur:
-- **`SKILL.md`:** Den centrala agent-skillen och regelboken (följer öppen Agent Skill-standard).
+- **`SKILL.md`:** Den centrala agent-skillen och regelboken (följer öppen Agent Skill-standard). Innehåller arbetsgången, utdatakontraktet, faktaskyddet och de 33 mönstren i kortform.
+- **`references/`:** Fördjupningen som agenten läser vid behov. `monster.md` (33 mönster med kännetecken, fix och källor), `svenska-ord.md` (ord- och frasbyten), `typografi.md` (svensk form), `sjalvkontroll.md` (godkänt/ej godkänt-lista som körs före svar).
 - **`genres/`:** Register- och nischguider för olika texttyper (affärstext, rapporter, artiklar, sociala medier, klarspråk, e-handel, rekrytering, kunddialog).
 - **`examples/`:** Fullständiga före/efter-exempel med självgranskning och analys.
 - **`platforms/`:** Plattformsspecifika konfigurationer och instruktioner (`pi/`, `cursor/`, `chatgpt/`, `copilot/`, `claude/`).
@@ -34,23 +35,33 @@ När en användare ber dig humanisera en svensk text eller fil:
 
 ### A. Identifiera arbetsläge
 - **Om flaggan `--snabb` anges:** Leverera **enbart** den tvättade sluttexten direkt i filen eller svaret. Inga förklarande texter eller punktlistor.
-- **Om flaggan `--granska` anges:** Skriv **inte** om texten. Analysera texten som en redaktör: lista identifierade AI-mönster med citat, förklara varför de signalerar AI och sätt ett betyg (1–10).
+- **Om flaggan `--granska` anges:** Skriv **inte** om texten. Analysera texten som en redaktör: lista identifierade AI-mönster med citat, förklara varför de signalerar AI, föreslå fix, och sätt ett AI-avtryck 1–10 som är ett redaktörsomdöme, inte en mätning.
 - **Standardläge:** 
-  1. Utkast till omskrivning.
-  2. Kort anti-AI-självgranskning (*"Vad avslöjar att texten fortfarande är AI-genererad?"* och *"Vad saknar texten för att låta skriven av en verklig person med en ståndpunkt?"*).
-  3. Slutlig mänsklig version.
+  1. Hela den omskrivna texten.
+  2. **Vad jag ändrade:** en rad per ändring som betyder något, med ordagranna citat ur utkastet.
+  3. **Kvar för dig:** allt som bara skribenten kan fylla i (saknad siffra, källa, skäl att skriva just nu).
+  4. Ingen inledande rapport om vad du läst eller tänker göra.
 
-### B. Anti-AI Engine (Tvingande regler för textbearbetning)
-För att texten ska passera både mänsklig granskning och AI-detektorer:
-1. **Radikal Burstiness (Meningslängd):** Variera meningslängden kraftigt. Blanda satser på 3–6 ord med längre resonerande meningar på 25–35 ord. Undvik jämntjocka meningar på 15–20 ord.
-2. **Svensk V2-fundamentvariation:** Börja inte varje mening med Subjekt + Verb (*"Detta visar...", "Företaget gör..."*). Placera tidsuttryck, bisatser, villkor eller objekt först i minst 40 % av meningarna.
-3. **Konkretion (Perplexity):** Ersätt svepande ord med specifika siffror, namn, tidsramar och mätpunkter.
-4. **Typografisk sanering:** Använd **aldrig** tankstreck (`—` eller ` – `) mitt i meningar. Ersätt med punkt, komma eller parentes. Rensa dekorativa emojis (🚀, 💡, ✅) och mekaniska punktlistor.
-5. **Nordisk röst:** Håll en direkt, saklig och lågmäld ton. Våga välja sida och dra slutsatser utan slätstrukna brasklappar.
+### B. Faktaskyddet (gäller före allt annat)
+1. **Rör aldrig sakuppgifter.** Belopp, datum, namn, kontonummer, källor och åtaganden står exakt som skribenten skrev dem. Ett tal som bytt form (3 → tre) räknas som ändrad sakuppgift.
+2. **Hitta aldrig på innehåll.** Konkretion får bara bygga på uppgifter som finns i utkastet eller konversationen. En påhittad siffra är värre än en vag mening, för den går att citera.
+3. **Lägg inte till led som utkastet saknar:** tidsordning ("efter det", "först, sedan"), orsak, villkor eller löften.
+4. **Låt inte luckor passera tyst.** Det som inte går att göra konkret utan påhittade uppgifter hamnar under **Kvar för dig**.
+
+### C. Anti-AI Engine (Tvingande regler för textbearbetning)
+För att texten ska läsa som skriven av en människa och tåla en van läsare:
+1. **Radikal Burstiness (Meningslängd):** Variera meningslängden kraftigt. Blanda satser på några ord med längre resonerande meningar. Undvik jämntjocka meningar på 15–20 ord, men gör inte "kort, lång, kort" till en ny metronom.
+2. **Svensk V2-fundamentvariation:** Börja inte varje mening med Subjekt + Verb (*"Detta visar...", "Företaget gör..."*). Placera tidsuttryck, bisatser, villkor eller objekt först när det passar. Ingen fast kvot.
+3. **Konkretion (Perplexity):** Ersätt svepande ord med specifika siffror, namn, tidsramar och mätpunkter som redan står i underlaget. Uppgifter du inte har får du aldrig hitta på, se faktaskyddet ovan.
+4. **Typografisk sanering:** `—` hör inte hemma i svensk text. Använd `–` sparsamt: utan mellanslag i intervall (9–18), med mellanslag runt inskjutningar. Ersätt i övrigt med punkt, komma eller parentes. Rensa dekorativa emojis (🚀, 💡, ✅) och mekaniska punktlistor.
+5. **Skydda rösten:** Gör minsta effektiva ändring. Lämna starka meningar i fred. En text som var i gott skick ska inte komma tillbaka halverad, och en text där varje mening är putsad är jämn, vilket är den starkaste markören av alla.
+6. **Nordisk röst:** Håll en direkt, saklig och lågmäld ton. Våga välja sida och dra slutsatser utan slätstrukna brasklappar.
 
 ---
 
-## 4. De 22 förbjudna AI-mönstren (Snabbkoll)
+## 4. De 33 förbjudna AI-mönstren (Snabbkoll)
+
+Fullständig katalog med kännetecken, förklaring, fix och källor: `references/monster.md`.
 
 1. **Signifikansuppblåsning:** "avgörande", "banbrytande", "paradigmskifte", "vittnar om".
 2. **Landskapsinledningar:** "I en alltmer digitaliserad värld...", "I en föränderlig omvärld...".
@@ -74,3 +85,14 @@ För att texten ska passera både mänsklig granskning och AI-detektorer:
 20. **"Låt oss djupdyka":** Metakommentarer där AI agerar föreläsare.
 21. **Syntetisk tröst:** "Vi förstår att detta kan kännas överväldigande...".
 22. **Falsk sammanfattningsfeber:** "Slutsats:" eller "Sammanfattningsvis:" i texter under 300 ord.
+23. **Ord-för-ord-svenska:** "adressera ett problem", "spendera tid", "vara på samma sida", "följa upp på".
+24. **Engelska lånord med svensk ändelse:** asken, caset, insighten, learnings, settingen.
+25. **Kanslisvenska verb:** erhålla, nyttja, erfordras, tillställa, åligger, därest.
+26. **Substantivsjuka:** "ta ett beslut", "göra en bedömning", "vidta åtgärder".
+27. **Onödiga synonymbyten:** samma sak i tre olika ord i rad.
+28. **Avsändarlös text:** "Många företag upplever att...", utan jag-form och utan förstahandsmaterial.
+29. **Retorisk fråga som besvaras:** "Vad betyder det här? Det betyder att...".
+30. **Kolon som spänningsknep:** nominalfras, kolon, poäng med liten bokstav.
+31. **Den djupa slutraden:** en byggd aforism som sista mening.
+32. **Jämna stycken och inläggets form:** alla stycken en till tre meningar, ensamt fragment som trumslag, kort slutrad.
+33. **Engelsk typografi:** `“ord”` i stället för `”ord”`, `12.5%` i stället för `12,5 %`, title case i rubriker, punkt efter rubrik.

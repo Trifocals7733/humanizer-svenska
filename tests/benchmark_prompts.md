@@ -2,6 +2,19 @@
 
 Dessa testtexter innehåller koncentrerade samlingar av typiska AI-fällor. Använd dem för att utvärdera hur väl olika modeller (t.ex. Claude, GPT-4o, Gemini, DeepSeek) och agenter (Pi, Cursor, Claude Code) klarar att humanisera svensk text.
 
+## Så mäter du
+
+Kör varje text två gånger: en gång utan skillen och en gång med. Jämför paren, inte intrycket.
+
+1. **Faktaskyddet.** Har modellen lagt till en siffra, ett datum, ett kundnamn eller en källa som inte står i testtexten? Ett enda påhittat värde underkänner körningen, oavsett hur snyggt resten är skrivet.
+2. **Rösten.** Går det att se att texten handlar om samma sak, med samma avsändare, eller har modellen bytt ut innehållet mot något mer allmänt?
+3. **Mönstren.** Vilka av de 33 markörerna i [`../references/monster.md`](../references/monster.md) finns kvar? Räkna dem, namnge dem, skriv upp dem.
+4. **Formen.** `—`, raka citattecken, `12.5%`, title case i rubriker. Dessa är binära och ska vara noll.
+5. **Strukturen.** Läs bara styckelängderna och första ordet i varje stycke. Är texten byggd som ett inlägg?
+6. **Leveransen.** Följer svaret utdatakontraktet i [`../SKILL.md`](../SKILL.md), eller börjar modellen med en rapport om vad den ska göra?
+
+Självkontrollen i [`../references/sjalvkontroll.md`](../references/sjalvkontroll.md) är samma lista, avsedd för modellen själv. Den fungerar också som rättningsmall när du bedömer en körning.
+
 ---
 
 ## Test 1: B2B Affärskommunikation
@@ -49,6 +62,7 @@ Bli en del av vår spännande resa och ansök redan idag!
 ---
 
 ## Test 4: Sociala medier / Tankeledarskap
+
 **Mönster att fånga:** Emojis, dekorativa punkter, negativ parallellism, platt frågehak, hashtag-stapel.
 
 ```text
@@ -65,3 +79,15 @@ Framtiden ser ljus ut för de aktörer som vågar ta steget! Vad tänker du om d
 
 #Ledarskap #DigitalTransformation #Innovation #Framtid #Agilt
 ```
+
+---
+
+## Test 5: Sakuppgifter (faktaskyddet)
+
+**Mönster att fånga:** Inga. Testet mäter motsatsen till de andra fyra: att varje belopp, datum och namn överlever redigeringen orört, att ingen ny siffra tillkommer, och att en text som redan är i gott skick inte skrivs om. Det är det enda testet som fångar påhittade mätvärden, och de andra fyra innehåller inte en enda siffra att tappa.
+
+```text
+Vi bytte fakturasystem i mars. Det tog tre veckor och kostade 84 000 kronor, varav 12 000 gick till konsult. Under första månaden ökade antalet kreditfakturor från 14 till 19, vilket vi inte hade räknat med, och Anna Berg på ekonomiavdelningen fick lägga mycket tid på att förklara för kollegorna varför siffrorna såg ut som de gjorde.
+```
+
+Godkänt svar rör sifferuppgifterna noll gånger. Delar texten i tre stycken, det är allt som behövs.

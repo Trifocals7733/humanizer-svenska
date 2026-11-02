@@ -3,26 +3,46 @@ description: Riktlinjer för att ta bort AI-mönster och skriva naturlig, mänsk
 globs: "**/*.{md,txt,sv.md,mdx}"
 ---
 
-# Humanizer Svenska för Cursor & Windsurf
+# Humanizer Svenska för Cursor och Windsurf
 
-När du genererar, redigerar eller granskar svensk text i detta projekt, följ alltid nedanstående regler för att undvika AI-svenska och skapa en naturlig, professionell röst.
+Före du genererar, redigerar eller granskar svensk text i det här projektet: läs `SKILL.md` om den finns i repot. Den innehåller arbetsgången, mönsterkatalogen och självkontrollen. Reglerna nedan är sammanfattningen som alltid gäller.
 
-## Anti-AI Riktlinjer
-1. **Variera meningslängd (Burstiness):** Blanda korta kärnfulla satser (3–8 ord) med längre resonerande meningar (20–30 ord). Skapa en levande rytm.
-2. **Variera fundamentet (V2-regeln):** Börja inte varje mening med Subjekt + Verb. Starta minst en tredjedel av meningarna med tidsadverbial, bisatser, villkor eller objekt.
-3. **Inga em-dashes:** Använd ALDRIG tankstreck (`—` eller ` – `) mitt i meningar. Använd kommatecken eller punkt.
-4. **Inga dekorativa punktlistor/emojis:** Stryk 🚀, 💡, ✅ och undvik att stycka upp löpande resonemang i listor med fetstilta nyckelord.
+## Innan du ändrar något
 
-## Förbjudna AI-klyschor (ersätt alltid):
-- "I en alltmer digitaliserad värld..." / "I dagens samhälle..." → Stryk helt.
-- "belyser vikten av" / "understryker behovet av" → Stryk eller skriv vad som är viktigt och varför.
-- "utgör" / "representerar" → "är", "innebär" eller ett aktivt verb.
-- "banbrytande" / "avgörande" / "paradigmskifte" → Stryk eller bevisa med fakta.
-- "sömlös" / "robust" / "skräddarsydd" → Beskriv den faktiska funktionen.
-- "inte bara X, utan även Y" → Formulera ett rakt påstående.
-- "ta ägarskap över" → "ansvara för", "driva".
-- "låt oss djupdyka" → Gå direkt till innehållet.
+Rör aldrig sakuppgifter. Belopp, datum, namn, siffror och källor står som skribenten skrev dem. Hitta aldrig på en siffra, en källa eller ett exempel för att göra texten konkret. Saknas uppgiften: lämna meningen allmän och säg det till användaren.
 
-## Lägen:
-- Om användaren ber om snabb humanisering eller skickar `--snabb`: Leverera endast den tvättade texten direkt i filen.
-- Om användaren ber om granskning eller `--granska`: Peka ut AI-mönster och föreslå ändringar utan att ersätta hela filen.
+Skribentens röst vinner över stilreglerna. Lämna starka meningar i fred. Gör minsta effektiva ändring, inte en omskrivning.
+
+## Mönster att ta bort
+
+- Uppblåst betydelse: avgörande, banbrytande, vittnar om, paradigmskifte.
+- Landskapsinledning: i en alltmer digitaliserad värld, spelplanen ritas om.
+- Falsk analys: belyser vikten av, understryker behovet av.
+- Vag auktoritet: experter menar, forskning visar.
+- Passiv formalitet: det kan konstateras att, det bör påpekas att.
+- Nominalisering: genomförandet av, säkerställandet av.
+- Anglifiering: ta ägarskap över, navigera förändringen, leverera värde.
+- Kopulaundvikande: utgör, representerar, fungerar som. Skriv är.
+- Negativ parallellism: det handlar inte om X, det handlar om Y.
+- "Inte bara X, utan även Y".
+- Ord-för-ord-svenska: adressera ett problem, spendera tid, på samma sida.
+- Kanslisvenska: erhålla, nyttja, erfordras.
+- Modeord: sömlös, robust, skräddarsydd, i framkant.
+- Tomma fraser: i syfte att uppnå, på grund av det faktum att, i nuläget.
+
+## Rytm
+
+Variera meningslängden kraftigt, utan mall. Variera fundamentet: svenskan har V2-ordföljd, så tidsuttryck, villkor, bisatser och objekt kan stå först. Undvik en rad korta hackiga meningar i följd.
+
+## Form, som är fel och inte stil
+
+- `–` är svenskt tankstreck. `—` är alltid fel. Utan mellanslag i intervall (9–18), med mellanslag runt inskjutningar. Sparsamt.
+- Citattecken: `”ord”`.
+- Decimalkomma och mellanslag i tusental: `12,5 %`, `1 450`. Väx aldrig om ett tal som står i utkastet.
+- Ingen title case i rubriker. Ingen punkt efter rubrik.
+- Emojis och fetstil först i varje punkt hör inte hemma i löptext.
+- Mejl, inte mail.
+
+## När du svarar
+
+Börja med texten. Sedan **Vad jag ändrade** med ordagranna citat, sist **Kvar för dig** med det bara skribenten kan fylla i. Ingen inledande rapport om vad du tänker göra.

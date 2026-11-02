@@ -7,6 +7,43 @@ Versioning follows [Semantic Versioning](https://semver.org/).
 
 ---
 
+## [4.0.0] - 2026-12-01
+
+### Sammanfattning
+
+Faktaskyddet blev standardens första regel, och skillen delades upp i en kort ingång med referensfiler som agenten läser vid behov. Arbetssättet gick från en förbudslista till en fyra-pass-process med röstskydd, utdatakontrakt och en självkontroll som körs före varje svar. Mönsterkatalogen utökades från 22 till 33 markörer, och varje markör fick ett källäge.
+
+### Varför
+
+Två problem drev bytet. Det första var att konkretionsregeln saknade spärr: standarden uppmanade modellen att byta vaga påståenden mot siffror, utan att säga var siffrorna skulle komma ifrån. Det bjöd in påhittade mätvärden i texter som ska gå till kunder. Det andra var att 22 förbud utan skydd för rösten producerar korrekt, jämn och död prosa. Fler regler ger mer enhetlighet, inte mer människa.
+
+### Added
+
+- **Faktaskyddet:** sakuppgifter rörs aldrig, konkretion får bara bygga på underlaget, och det som kräver uppgifter bara skribenten har hamnar under **Kvar för dig**.
+- **`references/monster.md`:** 33 markörer med kännetecken, förklaring, fix och källäge, samt en ärlig lista över vilka som saknar auktoritativ svensk källa.
+- **`references/svenska-ord.md`:** utbyteslistor för AI-favoritord, modeord, kanslisvenska enligt Svarta listan, ord-för-ord-svenska, engelska lånord med svensk ändelse, tomma fraser, garderingar, samt mejl, tilltal och avslutningstrappan.
+- **`references/typografi.md`:** svenska formregler för tankstreck, citattecken, siffror, rubriker, punktlistor, datum, genitiv och versaler.
+- **`references/sjalvkontroll.md`:** 49 punkter med godkänt eller ej godkänt, som körs före varje svar med rättning och omkörning vid underkänt.
+- **Röstskyddet:** minsta effektiva ändring, starka meningar lämnas i fred, strykmängden ska stå i proportion till slopet, och minst en mening får vara orörd.
+- **Strukturkontrollen:** mönster 32, inläggets form, mätt på styckelängder och första ordet i varje stycke.
+- **Nya mönster 23–33:** ord-för-ord-svenska, engelska lånord med svensk ändelse, kanslisvenska verb, substantivsjuka, onödiga synonymbyten, avsändarlös text, retorisk fråga som besvaras, kolon som spänningsknep, den djupa slutraden, jämna stycken och engelsk typografi.
+
+### Changed
+
+- **`SKILL.md`** är omskriven från grunden: ordningen reglerna gäller i, utdatakontrakt per läge, fyra pass, röstskydd, faktaskydd, mönstertabell och routing till referensfilerna.
+- **Tankstrecksregeln är korrigerad.** `—` är alltid fel i svensk text. `–` är svenskans tankstreck och används sparsamt: utan mellanslag i intervall, med mellanslag runt inskjutningar. Den tidigare regeln fällde korrekt svenska.
+- **Granskningsläget** behåller AI-avtryck 1–10, men betyget beskrivs som ett redaktörsomdöme och ska motiveras med vad som drar upp det.
+- **`platforms/`** är synkade mot de nya reglerna och pekar på `SKILL.md` i stället för att duplicera hela regelverket.
+- **`tests/benchmark_prompts.md`** har en mätmetod: kör utan och med skillen, jämför faktaskydd, röst, mönster, form, struktur och leverans. Ett femte test tillagt, sakuppgiftstestet, eftersom de fyra ursprungliga texterna inte innehöll en enda siffra att tappa.
+- **Citatregeln i loggen är förtydligad.** Det som står före **blev** ska vara ordagrant ur utkastet. Den nya formuleringen behöver inte vara det. Regeln gick inte att följa förut, eftersom ett normalt loggraderingspar citerar både före och efter.
+
+### Removed
+
+- Den valfria sammanfattningen i standardläget, som konkurrerade med texten om uppmärksamheten. Den får finnas kvar, men efter **Kvar för dig**.
+- Påståendet att standarden lurar AI-detektorer. Standarden riktar sig till läsare och språkvård, och ett betyg är ett omdöme.
+
+---
+
 ## [3.0.0] - 2026-11-01
 
 ### Summary

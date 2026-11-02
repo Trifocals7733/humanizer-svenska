@@ -35,11 +35,12 @@
 2. [Snabbstart per plattform](#snabbstart-per-plattform)
 3. [Tre arbetslägen](#tre-arbetslägen)
 4. [Skyddet mot AI-fällan (Anti-AI Engine)](#skyddet-mot-ai-fällan-anti-ai-engine)
-5. [De 22 AI-mönstren](#de-22-ai-mönstren)
+5. [De 33 AI-mönstren](#de-33-ai-mönstren)
 6. [Nischguider och textgenrer](#nischguider-och-textgenrer)
 7. [Faktiska före- och efter-exempel](#faktiska-före--och-efter-exempel)
 8. [Snabbreferens för ord- och frasbyten](#snabbreferens-för-ord--och-frasbyten)
-9. [Testa med färdiga benchmarks](#testa-med-färdiga-benchmarks)
+9. [Faktaskydd och självkontroll](#faktaskydd-och-självkontroll)
+10. [Testa med färdiga benchmarks](#testa-med-färdiga-benchmarks)
 
 ---
 
@@ -99,9 +100,9 @@ Du kan styra hur agenten levererar texten genom att ange ett läge:
 1. **`--snabb` (Snabbtvätt)**  
    Returnerar enbart den färdiga texten direkt. Inga kommentarer, inga punktlistor, ingen analys. Perfekt för snabb redigering direkt i filer.
 2. **Standardläge (Rekommenderat)**  
-   Levererar ett första utkast, genomför en kort självgranskning (*"Vad avslöjar att texten fortfarande är AI-genererad?"*) och presenterar sedan den slutgiltiga versionen.
+   Levererar hela den omskrivna texten, följt av **Vad jag ändrade** med ordagranna citat ur utkastet, och sist **Kvar för dig** med det bara du kan fylla i: en saknad siffra, en källa, ett skäl att skriva just i dag. Ingen inledande rapport om vad agenten läst eller tänker göra.
 3. **`--granska` (Redaktörscoach)**  
-   Skriver inte om texten direkt. Agerar istället redaktör: pekar ut vilka AI-fällor texten innehåller, citerar problematiska meningar och sätter ett AI-betyg (1–10).
+   Skriver inte om texten. Agerar redaktör: namnger varje mönster med ett eget citat och en kort fix, och avslutar med ett **AI-avtryck 1–10**. Betyget är ett redaktörsomdöme, inte en detektormätning, och det ska motiveras med vad som drar upp det.
 
 ---
 
@@ -112,21 +113,26 @@ Många tror att det räcker med att byta ut några enstaka klyschor. Men matemat
 Standarden tvingar därför modellen att följa fem strukturella principer:
 
 1. **Radikal Burstiness (Meningslängdsvariation):**  
-   AI håller sig bekvämt i mitten (15–20 ord). Standarden tvingar fram tvära kast. Korta meningar (3–6 ord). Sedan en längre, vindlande period (25–35 ord) som fördjupar tanken och låter argumentet landa. Sedan ett kort konstaterande.
+   AI håller sig bekvämt i mitten (15–20 ord). Standarden tvingar fram tvära kast: en mening på några ord, sedan en lång period där tanken kräver det, sedan ett konstaterande. Ingen fast mall, för en mall blir en ny metronom. En rad korta hackiga meningar i följd är också en markör.
 2. **Svensk fundamentvariation (V2-regeln):**  
-   Förbjuder att mer än hälften av meningarna inleds med Subjekt + Verb. Tidsuttryck (*"I våras..."*), platser, bisatser (*"När testerna avbröts..."*) och villkor måste placeras i meningsbörjan för att skapa ett naturligt svenskt språkligt flöde.
+   Förbjuder att mer än hälften av meningarna inleds med Subjekt + Verb. Tidsuttryck (*"I våras..."*), platser, bisatser (*"När testerna avbröts..."*) och villkor kan stå först och skapa ett naturligt svenskt flöde. Flytta fundamentet när det passar, inte enligt en kvot: mekanisk variation syns lika tydligt som ingen variation.
 3. **Hög Perplexity genom konkretion:**  
-   AI väljer statistiskt förutsägbara ord. Standarden kräver specifika fackord, exakta siffror, tidsramar och mätpunkter istället för generella påståenden som *"stora möjligheter"* eller *"starka resultat"*.
+   AI väljer statistiskt förutsägbara ord. Standarden kräver specifika fackord, exakta siffror, tidsramar och mätpunkter istället för generella påståenden som *"stora möjligheter"* eller *"starka resultat"*. Uppgifterna måste redan finnas i underlaget. Hittar agenten inte siffran ska den lämna meningen allmän och säga det, aldrig fylla i en rimlig.
 4. **Typografisk sanering (Stoppa em-dashes):**  
-   Totalförbud mot engelska tankstreck (`—`) mitt i meningar. Ersätts konsekvent med kommatecken, punkter eller parenteser. Dekorativa emojis och punktlistor rensas bort.
-5. **Ställningstagande och nordisk ton:**  
+   `—` hör inte hemma i svensk text. Svenska tankstrecket `–` används sparsamt: utan mellanslag i intervall (9–18) och med mellanslag runt inskjutningar. I övrigt punkt, komma eller parentes. Dekorativa emojis och punktlistor rensas bort.
+5. **Skyddad röst:**  
+   Minsta effektiva ändring. Starka meningar lämnas i fred, och en text som var i gott skick kommer inte tillbaka halverad. En text där varje mening är putsad är jämn, och jämn är den starkaste markören av alla.
+6. **Ställningstagande och nordisk ton:**  
    Svensk yrkeston bygger på saklighet, direkthet och understatement. Texten vågar prioritera bort det som inte fungerar och slutar låtsas att allt är problemfritt.
+
+> [!IMPORTANT]
+> **Faktaskyddet går före allt annat.** Belopp, datum, namn och källor rörs aldrig. Konkretion får bara bygga på uppgifter som redan finns i utkastet. Det som inte går att skriva konkret utan påhittade fakta hamnar under **Kvar för dig**, aldrig i texten.
 
 ---
 
-## De 22 AI-mönstren
+## De 33 AI-mönstren
 
-Huvuddokumentet [`SKILL.md`](./SKILL.md) innehåller fullständiga instruktioner för att identifiera och åtgärda 22 specifika AI-mönster:
+Huvuddokumentet [`SKILL.md`](./SKILL.md) innehåller arbetsgången och mönstren i kortform. Den fullständiga katalogen med kännetecken, förklaring, fix och källor för varje mönster finns i [`references/monster.md`](./references/monster.md):
 
 <details open>
 <summary><strong>📋 Klicka här för att visa/dölja mönsteröversikten</strong></summary>
@@ -157,6 +163,17 @@ Huvuddokumentet [`SKILL.md`](./SKILL.md) innehåller fullständiga instruktioner
 | 20 | **"Låt oss djupdyka"** | Föreläsaraktiga metakommentarer där AI kommenterar sitt skrivande |
 | 21 | **Syntetisk tröst & empati** | "Vi förstår att detta kan kännas överväldigande..." |
 | 22 | **Falsk sammanfattningsfeber** | Tvingande rubriker ("Slutsats:") i korta texter under 300 ord |
+| 23 | **Ord-för-ord-svenska** | "adressera ett problem", "spendera tid", "vara på samma sida" |
+| 24 | **Engelska lånord med svensk ändelse** | asken, caset, insighten, learnings |
+| 25 | **Kanslisvenska verb** | erhålla, nyttja, erfordras, tillställa, åligger |
+| 26 | **Substantivsjuka** | "ta ett beslut", "göra en bedömning", "vidta åtgärder" |
+| 27 | **Onödiga synonymbyten** | samma sak i tre olika ord i rad |
+| 28 | **Avsändarlös text** | "Många företag upplever att", utan jag-form och förstahandsmaterial |
+| 29 | **Retorisk fråga som besvaras** | "Vad betyder det här? Det betyder att..." |
+| 30 | **Kolon som spänningsknep** | nominalfras: poängen, med liten bokstav |
+| 31 | **Den djupa slutraden** | en byggd aforism som sista mening |
+| 32 | **Jämna stycken och inläggets form** | alla stycken en till tre meningar, ensamt fragment, kort slutrad |
+| 33 | **Engelsk typografi** | `“ord”`, `12.5%`, title case, punkt efter rubrik |
 
 </details>
 
@@ -178,6 +195,8 @@ Olika texttyper kräver olika register. Fördjupade guider finns i katalogen [`g
 ---
 
 ## Faktiska före- och efter-exempel
+
+Exemplen visar arbetsprocessen: råtext, identifierade mönster, utkast, självgranskning och slutversion. Själva svarsformatet, alltså vad agenten lämnar tillbaka, står i avsnitt 2 i [`SKILL.md`](./SKILL.md).
 
 I katalogen [`examples/`](./examples/) hittar du fullständiga genomgångar med råtext från AI, identifierade mönster, utkast, anti-AI-självgranskning och slutlig mänsklig version:
 
@@ -233,10 +252,19 @@ I katalogen [`examples/`](./examples/) hittar du fullständiga genomgångar med 
 | "många bollar i luften" | "prioriterar när flera uppgifter krockar" |
 | "låt oss djupdyka" | stryk och gå direkt på analysen |
 | "inte bara X, utan även Y" | formulera ett rakt påstående |
-| tankstreck mitt i meningar (`—`) | använd punkt eller kommatecken |
+| tankstreck mitt i meningar (`—`) | använd `–` sparsamt, annars punkt eller kommatecken |
 | dekorativa emojis (🚀, 💡, ✅) | stryk |
 
 </details>
+
+---
+
+## Faktaskydd och självkontroll
+
+Två saker skiljer standarden från en vanlig ordlista, och de ligger i [`references/`](./references/):
+
+* **[`sjalvkontroll.md`](./references/sjalvkontroll.md):** 49 punkter som agenten kör före varje svar, med godkänt eller ej godkänt. Vid ej godkänt rättas texten och listan körs om. Användaren ser bara texten, **Vad jag ändrade** och **Kvar för dig**.
+* **[`svenska-ord.md`](./references/svenska-ord.md)** och **[`typografi.md`](./references/typografi.md):** utbyteslistor för AI-ord, kanslisvenska, ord-för-ord-svenska och engelska lånord, samt de svenska formreglerna för tecken, siffror och rubriker.
 
 ---
 
