@@ -36,11 +36,16 @@ Två problem drev bytet. Det första var att konkretionsregeln saknade spärr: s
 - **`platforms/`** är synkade mot de nya reglerna och pekar på `SKILL.md` i stället för att duplicera hela regelverket.
 - **`tests/benchmark_prompts.md`** har en mätmetod: kör utan och med skillen, jämför faktaskydd, röst, mönster, form, struktur och leverans. Ett femte test tillagt, sakuppgiftstestet, eftersom de fyra ursprungliga texterna inte innehöll en enda siffra att tappa.
 - **Citatregeln i loggen är förtydligad.** Det som står före **blev** ska vara ordagrant ur utkastet. Den nya formuleringen behöver inte vara det. Regeln gick inte att följa förut, eftersom ett normalt loggraderingspar citerar både före och efter.
+- **`examples/` är omskrivna.** Alla sex visar nu svaret enligt standardläget: texten, **Vad jag ändrade** och **Kvar för dig**. Den tidigare "slutliga mänskliga versionen" fyllde i sakuppgifter som inte fanns i råtexten: ett företag, ett telefonnummer, en leverantör, fyra procentsatser och ett datum. Det lärde ut precis det faktaskyddet förbjuder. `examples/README.md` förklarar bytet.
+- **`references/monster.md` står i nummerordning.** Den tematiska grupperingen finns kvar som register högst upp, så mönster 19 går att hitta utan att leta.
+- **README är städad.** Inga dekorativa emojis, och texten säljer inte längre in sig mot AI-detektorer. Avsnittet om AI-motorn säger nu att detektorer inte är ett mått och att standarden siktar på läsaren.
+- **`platforms/chatgpt/system-prompt.md` är delad i två.** Fältet *Anpassa instruktioner* tar 1 500 tecken och filen pekade dit med en prompt på 5 892. Nu finns en kort version på 1 461 tecken och en full på 5 954 för Custom GPT, Gem och Projects.
 
 ### Removed
 
 - Den valfria sammanfattningen i standardläget, som konkurrerade med texten om uppmärksamheten. Den får finnas kvar, men efter **Kvar för dig**.
 - Påståendet att standarden lurar AI-detektorer. Standarden riktar sig till läsare och språkvård, och ett betyg är ett omdöme.
+- De påhittade sakuppgifterna i exempelfilerna: Alviks Byggteknik, Henrik Lindberg med telefonnummer, Kök & Hem, Voyado, CSRD-siffrorna, datumen i bygglovsbrevet och de 40 sparade arbetstimmarna. Alla var påhittade, och alla togs bort i stället för att skrivas om.
 
 ---
 

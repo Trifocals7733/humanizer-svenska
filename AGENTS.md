@@ -12,8 +12,8 @@ Detta dokument tillhandahåller instruktioner och riktlinjer för alla AI-agente
 - **`SKILL.md`:** Den centrala agent-skillen och regelboken (följer öppen Agent Skill-standard). Innehåller arbetsgången, utdatakontraktet, faktaskyddet och de 33 mönstren i kortform.
 - **`references/`:** Fördjupningen som agenten läser vid behov. `monster.md` (33 mönster med kännetecken, fix och källor), `svenska-ord.md` (ord- och frasbyten), `typografi.md` (svensk form), `sjalvkontroll.md` (godkänt/ej godkänt-lista som körs före svar).
 - **`genres/`:** Register- och nischguider för olika texttyper (affärstext, rapporter, artiklar, sociala medier, klarspråk, e-handel, rekrytering, kunddialog).
-- **`examples/`:** Fullständiga före/efter-exempel med självgranskning och analys.
-- **`platforms/`:** Plattformsspecifika konfigurationer och instruktioner (`pi/`, `cursor/`, `chatgpt/`, `copilot/`, `claude/`).
+- **`examples/`:** Sex fullständiga exempel i det format agenten ska leverera: råtext, identifierade mönster, och svaret med **Vad jag ändrade** och **Kvar för dig**. Inget exempel fyller i en sakuppgift som inte stod i råtexten. Läs `examples/README.md` först.
+- **`platforms/`:** Plattformsspecifika konfigurationer och instruktioner (`pi/`, `cursor/`, `chatgpt/`, `copilot/`, `claude/`). De sammanfattar reglerna och pekar på `SKILL.md` i stället för att duplicera dem.
 - **`tests/benchmark_prompts.md`:** Testsvit med koncentrerade AI-fällor för att utvärdera språkmodeller.
 - **`README.md` & `CHANGELOG.md`:** Dokumentation och versionshistorik.
 
@@ -24,8 +24,9 @@ Detta dokument tillhandahåller instruktioner och riktlinjer för alla AI-agente
 När du som agent utför ändringar i detta repository ska du följa dessa strikta regler:
 
 1. **Bevara 100 % ren Markdown:** Skapa inga Node/Python-byggskript eller externa beroenden om inte användaren uttryckligen ber om det. All logik ska vara direkt tillgänglig i ren Markdown.
-2. **Följ alltid standardens egna skrivregler:** När du genererar eller uppdaterar svensk text och dokumentation i detta arkiv får du **aldrig** falla i de AI-fällor som projektet bekämpar.
-3. **Dokumentationsspråk:** Huvuddokumentationen ska förbli på svenska (eftersom verktyget är för svenska skribenter), med undantag för den korta sammanfattningen i toppen av `README.md`.
+2. **Följ alltid standardens egna skrivregler:** När du genererar eller uppdaterar svensk text och dokumentation i detta arkiv får du **aldrig** falla i de AI-fällor som projektet bekämpar. Det gäller även README, CHANGELOG och dina egna svar: inga dekorativa emojis, inga raka citattecken i löptext, och `—` bara när du citerar en text som innehåller det.
+3. **Hitta aldrig på sakuppgifter i exempel eller dokumentation.** Ett exempel som ser trovärdigt ut men innehåller ett påhittat kundnamn, telefonnummer eller en påhittad procentsats lär ut precis det standarden förbjuder.
+4. **Dokumentationsspråk:** Huvuddokumentationen ska förbli på svenska (eftersom verktyget är för svenska skribenter), med undantag för den korta sammanfattningen i toppen av `README.md`.
 
 ---
 

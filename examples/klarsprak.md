@@ -1,10 +1,10 @@
-# Exempel: Klarspråk & Myndighetstext
+# Exempel: Klarspråk och myndighetstext
 
-Detta exempel visar bearbetningen av ett kompletteringsföreläggande och informationsbeslut från en svensk tillsynsmyndighet/kommun.
+Ett kompletteringsföreläggande från en kommunal bygglovsenhet. Råtexten bryter mot språklagens 11 § på varje rad, men den innehåller också uppgifter som måste stå kvar: ärendenummer, vad som ska kompletteras och vad som händer om det inte kommer in.
 
 ---
 
-## 1. Råtext (AI-genererad text)
+## 1. Råtext
 
 > **Kompletteringsföreläggande avseende ärende B-2025-4819**
 >
@@ -16,55 +16,44 @@ Detta exempel visar bearbetningen av ett kompletteringsföreläggande och inform
 
 ---
 
-## 2. Identifierade AI-mönster
+## 2. Identifierade mönster
 
-* **Nominaliseringsstaplar (Mönster 6):** *"Med anledning av inkommen ansökan rörande uppförande av..."*, *"I syfte att handläggning ska kunna genomföras erfordras..."*, *"insändande av reviderade ritningar"*.
-* **Förlegad byråkratprosa:** *"erfordras"*, *"tillhandahållits"*, *"anmodas härmed"*, *"varvid beaktande ska tas"*, *"i händelse av att"*.
-* **Kopulaundvikande (Mönster 15):** *"utgör en förutsättning för prövning"* istället för *"behövs för att vi ska kunna bedöma"*.
-* **Dold aktör (Passiv form):** Mottagaren vet knappt vem som gör vad eller vad som förväntas. Strider direkt mot **Språklagen 11 §** och Språkrådets klarspråksprinciper.
-
----
-
-## 3. Utkast till omskrivning
-
-> **Du behöver komplettera din ansökan om bygglov (ärende B-2025-4819)**
->
-> Vi har gått igenom din ansökan om att bygga ett attefallshus. För att vi ska kunna fatta beslut behöver du skicka in en ny situationsplan. 
->
-> Den karta du skickade in saknar mått till tomtgränsen mot din granne. Skicka in kartan senast den 15 april, annars kan vi inte pröva din ansökan.
+* **6, Nominaliseringsöverdrift:** ”uppförande av komplementbyggnad”, ”handläggning av ärendet”, ”insändande av reviderade ritningar”, ”beaktande ska tas till”.
+* **25, Kanslisvenska verb:** ”erfordras”, ”tillhandahållits”, ”anmodas härmed”, ”vidta rättelse”.
+* **5, Passiv formalitet:** ”kan det konstateras att”, ”det bör påpekas att”.
+* **15, Kopulaundvikande:** ”utgör en förutsättning för prövning”.
+* **12, Utfyllnadsfraser:** ”i syfte att”, ”i händelse av att”.
+* **28, Avsändarlös text:** ingen aktör syns. Läsaren får inte veta vem som beslutat, vem som ska ta emot handlingarna eller vem man frågar.
+* **Klarspråk:** strider mot språklagens 11 § och mot principen att det viktigaste för mottagaren kommer först.
 
 ---
 
-## 4. Självgranskning (Anti-AI Test)
+## 3. Svaret enligt standardläget
 
-**Vad avslöjar att utkastet fortfarande kan vara AI-genererat?**
-- Utkastet är sakligt och begripligt, men lite för abrupt i övergången kring vad som händer om handlingarna uteblir.
+Du behöver komplettera din ansökan, ärende B-2025-4819
 
-**Vad saknar texten för att uppfylla äkta svenskt klarspråk?**
-- Konkreta anvisningar om *hur* medborgaren ska skicka in handlingarna (e-tjänst) och kontaktuppgifter vid frågor.
+Vi har fått din ansökan om att uppföra en komplementbyggnad. Vi kan inte pröva den förrän vi har en situationsplan som visar hur byggnaden förhåller sig till detaljplanen och hur nära fastighetsgränsen den placeras.
 
----
+Skicka in reviderade ritningar till förvaltningen inom den tid som anges i föreläggandet. Kommer de inte in i tid kan vi avvisa ärendet med stöd av gällande lagstiftning.
 
-## 5. Slutlig mänsklig version
+### Vad jag ändrade
 
-> **Du behöver komplettera din ansökan om bygglov (ärende B-2025-4819)**
->
-> Vi har granskat din ansökan om att bygga ett garage på fastigheten Björken 4:12. 
-> 
-> För att vi ska kunna fatta ett beslut behöver du komplettera med en ny situationsplan. Den ritning du skickade med saknar mått som visar hur nära tomtgränsen garaget ska placeras.
->
-> ### Det här behöver du göra:
-> 1. Rita in garagets yttermått på situationsplanen.
-> 2. Mät ut och ange avståndet i meter till närmaste tomtgräns.
-> 3. Ladda upp ritningen via vår e-tjänst senast den **18 april 2025**.
->
-> Om du inte skickar in kompletteringen i tid tvingas vi avvisa din ansökan. Då får du ansöka på nytt.
->
-> Har du frågor om måttsättningen? Ring bygglovsavdelningen på 08-123 45 67 eller svara direkt på detta meddelande.
+* ”Med anledning av inkommen ansökan rörande uppförande av komplementbyggnad kan det konstateras att erforderliga handlingar ej har tillhandahållits” blev ”Vi har fått din ansökan om att uppföra en komplementbyggnad. Vi kan inte pröva den förrän vi har en situationsplan”. Passiven och kanslisvenskan är borta, och ”vi” och ”du” syns.
+* ”I syfte att handläggning av ärendet ska kunna genomföras erfordras att kompletterande underlag inkommer” ströks. Den sa samma sak som meningen före, i längre form.
+* ”Fastighetsägaren anmodas härmed att vidta rättelse genom insändande av reviderade fackmannamässiga ritningar” blev ”Skicka in reviderade ritningar”. Fyra nominaliseringar blev ett verb.
+* ”varvid beaktande ska tas till gällande avståndskrav gentemot fastighetsgräns” blev ”hur nära fastighetsgränsen den placeras”. Kravet står kvar, ordet ”avståndskrav” behövdes inte för att förstå det.
+* ”I händelse av att” blev ”Kommer de inte in i tid”. ”med stöd av gällande lagstiftning” står kvar, för det är den rättsliga grunden för avvisningen.
+* Rubriken säger nu vad mottagaren ska göra, i stället för vad förvaltningen gör.
+
+### Kvar för dig
+
+* Datumet. Råtexten talar om ”föreskriven tidsfrist” utan att ange den, och jag skriver inte in en egen. Exemplet som låg här före v4.0.0 hittade på både ett datum, en fastighetsbeteckning och ett telefonnummer.
+* Vad detaljplanen medger för byggarea och höjd, om det ska stå i brevet.
+* Handläggarens namn och kontaktuppgifter.
+* Om ritningarna måste vara upprättade av någon med fackkunskap.
 
 ---
 
-## Varför denna version klarar granskning
-1. **Aktiv röst och tydliga roller:** Myndigheten är *"Vi"*, sökanden är *"Du"*.
-2. **Pedagogisk struktur (ISO 24495-1):** Det viktigaste kommer först, följt av en handfast numrerad lista över vad mottagaren ska göra.
-3. **Klarspråk utan floskler:** Alla ålderdomliga kansliord är utbytta mot modern, vårdad svenska med bibehållen juridisk giltighet.
+## Vad exemplet visar
+
+Här fanns tillräckligt med sakuppgifter för att brevet skulle kunna skrivas färdigt, utom datumet. Det är den sortens lucka som ska stå under **Kvar för dig** och inte fyllas i. Lägg märke till att texten blev kortare utan att något rättsligt försvann: ”erfordras”, ”anmodas” och ”varvid beaktande ska tas” bar ingen information som inte står kvar.

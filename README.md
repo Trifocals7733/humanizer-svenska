@@ -1,11 +1,11 @@
 <div align="center">
 
-# 🇸🇪 Humanizer på Svenska
+# Humanizer på Svenska
 
 **Universell öppen standard och regelsamling för att ta bort AI-mönster ur professionell svensk text.**
 
 [![skills.sh](https://skills.sh/b/Trifocals7733/humanizer-svenska)](https://skills.sh/Trifocals7733/humanizer-svenska)
-[![Språk](https://img.shields.io/badge/språk-svenska%20🇸🇪-005293?style=flat-square)](./SKILL.md)
+[![Språk](https://img.shields.io/badge/språk-svenska-005293?style=flat-square)](./SKILL.md)
 [![Pi Agents](https://img.shields.io/badge/Pi%20Agents-ready-7C3AED?style=flat-square)](./platforms/pi/README.md)
 [![Agent Skills](https://img.shields.io/badge/Agent%20Skills-compatible-blueviolet?style=flat-square)](./SKILL.md)
 [![Licens](https://img.shields.io/badge/licens-MIT-blue?style=flat-square)](./LICENSE)
@@ -19,14 +19,14 @@
 
 ---
 
-### ⚡ Snabbtitt: Före och efter
+### Snabbtitt: före och efter
 
-| ❌ Typisk AI-genererad svenska | ✅ Humaniserad professionell svenska |
+| Typisk AI-genererad svenska | Humaniserad professionell svenska |
 |---|---|
 | *"I en alltmer digitaliserad värld är det avgörande att organisationer proaktivt tar ägarskap över sina processer. Vår innovativa helhetslösning utgör ett banbrytande verktyg som möjliggör en sömlös integration och skapar mervärde i linje med framtidens krav."* | *"Vi kortade orderhanteringen från tre dagar till 20 minuter genom att koppla ihop Visma direkt med lagersystemet. Inga nya konsulter, bara ett API som synkar var femte minut."* |
 
 > [!TIP]
-> **Varför reagerar AI-detektorer och läsare?** Det beror sällan på enstaka ord. AI-text avslöjas framför allt av **monoton meningslängd** (alla meningar är 15–20 ord långa), **stel meningsbyggnad** (80 % av meningarna börjar med Subjekt + Verb) och **engelska tankstreck (`—`)**. Standarden tvingar fram naturlig rytm och äkta svenskt språkflöde.
+> **Varför reagerar läsaren?** Det beror sällan på enstaka ord. AI-text avslöjas framför allt av **monoton meningslängd** (alla meningar är 15–20 ord långa), **stel meningsbyggnad** (80 % av meningarna börjar med Subjekt + Verb) och **det amerikanska strecket `—`**. Standarden tvingar fram naturlig rytm och äkta svenskt språkflöde.
 
 ---
 
@@ -50,7 +50,7 @@ De flesta AI-humanizers och prompt-instruktioner är utvecklade för engelska. N
 
 * **Stel låtsasbyråkrati:** AI staplar nominaliseringar (*"genomförandet av etableringen av..."*) och passiva satser i tron att det låter formellt och professionellt. I verkligheten strider det mot modernt svenskt klarspråk.
 * **Syntaxfel (V2-monotoni):** På svenska ska verbet komma på andra plats, och infödda skribenter varierar meningsbörjan flitigt. AI börjar nästan varje mening med Subjekt + Verb (*"Detta innebär...", "Företaget erbjuder..."*).
-* **Em-dash-sjukan:** Engelska modeller sprider tankstreck (`—`) mitt i meningar, vilket ger en onaturlig och uppstyltad textrytm.
+* **Det amerikanska strecket:** Modeller sprider `—` mitt i meningar. Svenska skrivregler har ett eget tankstreck, `–`, och det används sparsamt.
 * **Jämntjock rytm (Låg burstiness):** AI skriver nästan alla meningar mellan 14 och 22 ord. Texten saknar mänsklig puls och dynamik.
 * **Neutraliserad diplomati:** AI vägrar att ta ställning och slätar över konflikter med "å ena sidan och å andra sidan", utan att landa i en verklig slutsats.
 
@@ -74,7 +74,7 @@ Be Pi läsa `SKILL.md` direkt i sessionen:
 pi "Läs SKILL.md och humanisera texten i draft.md (--snabb)"
 ```
 För att sätta det som standard för hela projektet, lägg till referensen i din `AGENTS.md`.  
-👉 Se full guide i [`platforms/pi/README.md`](./platforms/pi/README.md).
+Se full guide i [`platforms/pi/README.md`](./platforms/pi/README.md).
 
 ### 2. Cursor & Windsurf
 Lägg regeln i projektets `.cursor/rules/`:
@@ -86,7 +86,7 @@ Kopiera den färdiga systempromptern från [`platforms/chatgpt/system-prompt.md`
 ### 4. Anthropic Claude (Claude Code & Projects)
 * **Claude Code:** Klona repot till `~/.claude/skills/humanizer-svenska` och kör `/humanizer-svenska`.
 * **Claude.ai Projects:** Klistra in systeminstruktionen i dina Project Instructions.  
-👉 Se full guide i [`platforms/claude/README.md`](./platforms/claude/README.md).
+Se full guide i [`platforms/claude/README.md`](./platforms/claude/README.md).
 
 ### 5. GitHub Copilot
 Kopiera anvisningarna från [`platforms/copilot/copilot-instructions.md`](./platforms/copilot/copilot-instructions.md) till din `.github/copilot-instructions.md`.
@@ -108,9 +108,11 @@ Du kan styra hur agenten levererar texten genom att ange ett läge:
 
 ## Skyddet mot AI-fällan (Anti-AI Engine)
 
-Många tror att det räcker med att byta ut några enstaka klyschor. Men matematiska AI-detektorer (Copyleaks, GPTZero, Turnitin) och vana mänskliga läsare reagerar på underliggande matematiska och stilistiska mönster.
+Många tror att det räcker med att byta ut några enstaka klyschor. Men texten avslöjas av strukturen, och en van läsare känner igen den utan att kunna peka på varför.
 
-Standarden tvingar därför modellen att följa fem strukturella principer:
+AI-detektorer är inget mått. De ger falska träffar på text som skrivits av människor, och de kan inte skilja på en städad text och en mänsklig. Standarden siktar därför på läsaren: en människa som arbetar med språk, och som märker när något inte stämmer.
+
+Standarden tvingar därför modellen att följa sex strukturella principer:
 
 1. **Radikal Burstiness (Meningslängdsvariation):**  
    AI håller sig bekvämt i mitten (15–20 ord). Standarden tvingar fram tvära kast: en mening på några ord, sedan en lång period där tanken kräver det, sedan ett konstaterande. Ingen fast mall, för en mall blir en ny metronom. En rad korta hackiga meningar i följd är också en markör.
@@ -118,7 +120,7 @@ Standarden tvingar därför modellen att följa fem strukturella principer:
    Förbjuder att mer än hälften av meningarna inleds med Subjekt + Verb. Tidsuttryck (*"I våras..."*), platser, bisatser (*"När testerna avbröts..."*) och villkor kan stå först och skapa ett naturligt svenskt flöde. Flytta fundamentet när det passar, inte enligt en kvot: mekanisk variation syns lika tydligt som ingen variation.
 3. **Hög Perplexity genom konkretion:**  
    AI väljer statistiskt förutsägbara ord. Standarden kräver specifika fackord, exakta siffror, tidsramar och mätpunkter istället för generella påståenden som *"stora möjligheter"* eller *"starka resultat"*. Uppgifterna måste redan finnas i underlaget. Hittar agenten inte siffran ska den lämna meningen allmän och säga det, aldrig fylla i en rimlig.
-4. **Typografisk sanering (Stoppa em-dashes):**  
+4. **Typografisk sanering:**  
    `—` hör inte hemma i svensk text. Svenska tankstrecket `–` används sparsamt: utan mellanslag i intervall (9–18) och med mellanslag runt inskjutningar. I övrigt punkt, komma eller parentes. Dekorativa emojis och punktlistor rensas bort.
 5. **Skyddad röst:**  
    Minsta effektiva ändring. Starka meningar lämnas i fred, och en text som var i gott skick kommer inte tillbaka halverad. En text där varje mening är putsad är jämn, och jämn är den starkaste markören av alla.
@@ -135,7 +137,7 @@ Standarden tvingar därför modellen att följa fem strukturella principer:
 Huvuddokumentet [`SKILL.md`](./SKILL.md) innehåller arbetsgången och mönstren i kortform. Den fullständiga katalogen med kännetecken, förklaring, fix och källor för varje mönster finns i [`references/monster.md`](./references/monster.md):
 
 <details open>
-<summary><strong>📋 Klicka här för att visa/dölja mönsteröversikten</strong></summary>
+<summary><strong>Visa eller dölj mönsteröversikten</strong></summary>
 
 <br/>
 
@@ -196,23 +198,23 @@ Olika texttyper kräver olika register. Fördjupade guider finns i katalogen [`g
 
 ## Faktiska före- och efter-exempel
 
-Exemplen visar arbetsprocessen: råtext, identifierade mönster, utkast, självgranskning och slutversion. Själva svarsformatet, alltså vad agenten lämnar tillbaka, står i avsnitt 2 i [`SKILL.md`](./SKILL.md).
+Exemplen visar samma tre saker som svaret ska innehålla: råtexten, de mönster som hittades, och vad agenten lämnar tillbaka enligt standardläget. Alltså texten, **Vad jag ändrade** och **Kvar för dig**.
 
-I katalogen [`examples/`](./examples/) hittar du fullständiga genomgångar med råtext från AI, identifierade mönster, utkast, anti-AI-självgranskning och slutlig mänsklig version:
+Ingen av dem fyller i en sakuppgift som inte stod i råtexten. Där underlaget inte räcker blir texten kortare och **Kvar för dig** längre. Läs [examples/README.md](./examples/README.md) för varför, och vad som ändrades i v4.0.0.
 
-* [`examples/affarstext.md`](./examples/affarstext.md) – B2B-försäljning och integrationer
-* [`examples/rapport.md`](./examples/rapport.md) – Hållbarhetsrapport enligt CSRD
-* [`examples/artikel.md`](./examples/artikel.md) – Debattartikel om generativ AI inom marknadsföring
-* [`examples/sociala-medier.md`](./examples/sociala-medier.md) – LinkedIn-inlägg om möteskultur
-* [`examples/klarsprak.md`](./examples/klarsprak.md) – Kommunalt bygglovsärende
-* [`examples/rekrytering.md`](./examples/rekrytering.md) – Platsannons för projektledare inom bygg och installation
+* [`examples/affarstext.md`](./examples/affarstext.md): kall B2B-outreach utan en enda uppgift
+* [`examples/rapport.md`](./examples/rapport.md): sammanfattning utan resultat
+* [`examples/artikel.md`](./examples/artikel.md): debattartikel med ståndpunkt och utan påhittade siffror
+* [`examples/sociala-medier.md`](./examples/sociala-medier.md): LinkedIn-inlägg och inläggets form
+* [`examples/klarsprak.md`](./examples/klarsprak.md): kommunalt bygglovsärende med juridiskt innehåll
+* [`examples/rekrytering.md`](./examples/rekrytering.md): platsannons utan villkor
 
 ---
 
 ## Snabbreferens för ord- och frasbyten
 
 <details>
-<summary><strong>🔍 Klicka här för att öppna den kompletta listan med 36 ord- och frasbyten</strong></summary>
+<summary><strong>Öppna den kompletta listan med ord- och frasbyten</strong></summary>
 
 <br/>
 

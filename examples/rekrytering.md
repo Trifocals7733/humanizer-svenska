@@ -1,10 +1,10 @@
-# Exempel: Rekrytering & Platsannonser (HR)
+# Exempel: Rekrytering och platsannonser
 
-Detta exempel visar bearbetningen av en platsannons för en projektledare/koordinator på ett växande medelstort företag.
+En platsannons för en projektledare. Råtexten innehåller ingen uppgift om företaget, rollen, orten eller villkoren, bara en rad adjektiv. Den går att städa men inte att göra komplett.
 
 ---
 
-## 1. Råtext (AI-genererad text)
+## 1. Råtext
 
 > **Är du vår nya stjärna? Vi söker en driven projektledare som brinner för förändring!**
 >
@@ -23,63 +23,46 @@ Detta exempel visar bearbetningen av en platsannons för en projektledare/koordi
 
 ---
 
-## 2. Identifierade AI-mönster
+## 2. Identifierade mönster
 
-* **Mönster 2 (Landskapsinledning):** *"I en snabbrörlig och ständigt föränderlig värld..."*
-* **Mönster 18 (Kvasifamiljär ton & Tankstreck):** *"Hos oss blir du inte bara en i mängden — du blir en del av vår familj..."*
-* **Mönster 7 & 19 (Anglifieringar & Modord):** *"spindeln i nätet"*, *"agera proaktivt"*, *"från ax till limpa"*, *"sömlös kommunikation"*, *"holistiskt arbetssätt"*, *"skapar mervärde"*.
-* **Floskelstapling:** *"brinner för"*, *"många bollar i luften"*, *"dynamisk miljö"*, *"göra en skillnad på riktigt"*, *"spännande resa"*.
-* **Tretalsmönster i krav:** *"strukturerad, flexibel och lösningsorienterad"*.
-
----
-
-## 3. Utkast till omskrivning
-
-> **Projektledare till leveransteamet på Alviks Byggteknik**
->
-> Vi söker en projektledare som kan hålla ordning på tidsplaner och underleverantörer i våra installationsprojekt.
->
-> Hos oss leder du 3–5 samtidiga projekt inom ventilation och styrteknik. Du har direktkontakt med beställarna och ser till att montörerna har rätt underlag i tid.
->
-> Vi söker dig som har jobbat med entreprenadprojekt tidigare och trivs med att lösa praktiska problem när tidplanen spricker.
+* **2, Landskaps- och trenduppramning:** ”I en snabbrörlig och ständigt föränderlig värld”.
+* **17 och 18, tankstreck och ”inte bara X, utan även Y”:** ”du inte bara en i mängden — du blir en del av vår familj”. Två mönster i en mening.
+* **7, Anglifieringsimporter:** ”navigerar framtidens utmaningar”, ”driva från ax till limpa”, ”sömlös kommunikation”, ”holistiskt arbetssätt”.
+* **19, Modeord:** ”sömlös”, ”dynamisk miljö”, ”spännande resa”.
+* **1, Signifikansuppblåsning:** ”vår nya stjärna”, ”fantastiska team”, ”göra en skillnad på riktigt”.
+* **8, Tretalsregeln:** ”struktur, ordning och reda”, ”strukturerad, flexibel och lösningsorienterad”.
+* **28, Avsändarlös text:** annonsen har ingen avsändare, ingen ort, ingen kontaktperson och inga villkor. Läsaren får veta hur det känns att jobba där, inte vad jobbet är.
 
 ---
 
-## 4. Självgranskning (Anti-AI Test)
+## 3. Svaret enligt standardläget
 
-**Vad avslöjar att utkastet fortfarande kan vara AI-genererat?**
-- Utkastet är befriat från floskler, men rollen och kraven behöver bli ännu mer konkreta för att fungera som en komplett annons.
+Vi söker en projektledare.
 
-**Vad saknar texten för att låta skriven av en verklig rekryterande chef?**
-- Konkreta systemkrav, teamstorlek och tydliga ramar kring distansarbete/resor och kollektivavtal.
+Du ska driva projekt från start till mål och hålla ihop kommunikationen mellan de intressenter som är inblandade. Vi söker dig som har ordning på detaljerna, som trivs när tempot är högt och som hittar lösningar när förutsättningarna ändras.
 
----
+Skicka in din ansökan.
 
-## 5. Slutlig mänsklig version
+### Vad jag ändrade
 
-> **Projektledare till installationsprojekt – Alviks Byggteknik (Göteborg)**
->
-> Under våren har vi tagit in tre nya ramavtal med kommunala bostadsbolag. Därför behöver vi en projektledare som tar över ansvaret för entreprenaderna från kalkylskedet fram till slutbesiktning.
->
-> ### Vad du faktiskt kommer göra:
-> - Driva 3 till 5 parallella ventilations- och styrprojekt (budget mellan 2 och 15 miljoner kr per projekt).
-> - Beställa material och samordna våra 12 egna montörer samt externa underentreprenörer.
-> - Hålla byggmöten varannan vecka och hantera ÄTA-krav direkt mot beställaren.
-> - Följa upp projektens löpande ekonomi i Bygglet.
->
-> ### Vad vi kräver:
-> - Minst 3 års erfarenhet av projektledning inom installationsentreprenad (AB 04 / ABT 06).
-> - B-körkort (du rör dig mellan kontoret i Mölndal och våra byggarbetsplatser i Storgöteborg 2–3 dagar i veckan).
-> - Förmåga att ta tuffa diskussioner om förseningar utan att relationen med kunden skadas.
->
-> ### Villkor:
-> Fast månadslön, tjänstebil, kollektivavtal (Byggavtalet) och 5 000 kr i friskvårdsbidrag. Möjlighet till hemarbete 1–2 dagar i veckan när byggmötena tillåter det.
->
-> Frågor om tjänsten? Ring produktionschef Henrik Lindberg direkt på 031-789 12 34. Sista ansökningsdag: 30 april.
+* ”Är du vår nya stjärna? Vi söker en driven projektledare som brinner för förändring!” blev ”Vi söker en projektledare”. Rubriken sa inget om rollen, och ”brinner för” är en floskel som inte går att bedöma.
+* ”I en snabbrörlig och ständigt föränderlig värld söker vi nu en engagerad kollega till vårt fantastiska team” ströks. Inledningen och ”fantastiska” föll i samma mening.
+* ”Hos oss blir du inte bara en i mängden — du blir en del av vår familj där vi tillsammans navigerar framtidens utmaningar” ströks. Familjeanspråket är ett löfte som ingen annons kan infria, och strecket försvann med meningen.
+* ”I rollen som spindeln i nätet kommer du att agera proaktivt och driva komplexa projekt från ax till limpa” blev ”Du ska driva projekt från start till mål”. Fyra bildliga uttryck blev ett rakt verb.
+* ”Du säkerställer en sömlös kommunikation mellan olika intressenter och möjliggör ett holistiskt arbetssätt som skapar mervärde” blev ”hålla ihop kommunikationen mellan de intressenter som är inblandade”. Resten sa inget om arbetsuppgiften.
+* Kravlistan med fyra punkter skrevs som en mening. Tre av punkterna var samma egenskap i olika ord, och den fjärde gick inte att bedöma.
+* ”Skicka in din ansökan redan idag och bli en del av vår spännande resa!” blev ”Skicka in din ansökan”.
+
+### Kvar för dig
+
+* Företagets namn och var tjänsten finns.
+* Vilka projekt rollen gäller, hur många som pågår samtidigt och vilka system som används.
+* Erfarenhetskrav, anställningsform, lön, arbetstid och sista ansökningsdag.
+* Kontaktperson. Exemplet som låg här före v4.0.0 hittade på både företagsnamn, telefonnummer, budgetar och ett antal montörer.
+* Om ni vill beskriva kulturen: ett konkret exempel slår ”familj” varje gång.
 
 ---
 
-## Varför denna version klarar granskning
-1. **Konkreta siffror och branschstandarder:** Nämner AB 04/ABT 06, budgetramar (2–15 mkr), montörsantal och affärssystemet Bygglet.
-2. **Noll floskler:** Alla vaga adjektiv (*"driven"*, *"spindeln i nätet"*) är utbytta mot faktiska ansvarsområden och färdigheter.
-3. **Ärlig och respektfull ton:** Tydliga villkor (kollektivavtal, tjänstebil) och en direkt kontaktperson med telefonnummer skapar omedelbart förtroende.
+## Vad exemplet visar
+
+En annons utan villkor går att göra läsbar men inte att publicera. Skillnaden mot den gamla versionen i den här filen är att den fyllde i allt: bransch, ort, projektbudgetar, antal anställda, avtal och en namngiven chef med telefonnummer. Det blev en övertygande annons om ett företag som inte finns.

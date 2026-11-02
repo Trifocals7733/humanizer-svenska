@@ -1,61 +1,59 @@
-# Exempel: Artiklar & Tankeledarskap
+# Exempel: Artiklar och tankeledarskap
 
-Detta exempel visar bearbetningen av en branschkrönika/debattartikel om generativ AI inom svensk marknadsföring.
+En kort debattartikel om generativ AI i svensk marknadsföring. Råtexten har en tes, men ingen som helst grund för den: källorna är anonyma och slutsatsen är en fråga som skribenten inte besvarar.
 
 ---
 
-## 1. Råtext (AI-genererad text)
+## 1. Råtext
 
-> I en värld där digitaliseringen omformar spelplanen i grunden spelar artificiell intelligens en alltmer central roll för hur moderna företag kommunicerar med sina kunder. Det råder ingen tvekan om att detta skifte representerar ett banbrytande genombrott som kommer att förändra marknadsföringen i grunden. 
+> I en värld där digitaliseringen omformar spelplanen i grunden spelar artificiell intelligens en alltmer central roll för hur moderna företag kommunicerar med sina kunder. Det råder ingen tvekan om att detta skifte representerar ett banbrytande genombrott som kommer att förändra marknadsföringen i grunden.
 >
-> Branschkällor pekar på att företag som inte omfamnar denna utveckling riskerar att hamna på efterkälken. Det handlar inte om teknik — det handlar om människors förmåga att navigera förändringen på ett holistiskt sätt. Å ena sidan frigör automatisering värdefull tid för kreativt skapande, men å andra sidan ställs nya krav på etiska riktlinjer och kvalitetssäkring. 
+> Branschkällor pekar på att företag som inte omfamnar denna utveckling riskerar att hamna på efterkälken. Det handlar inte om teknik — det handlar om människors förmåga att navigera förändringen på ett holistiskt sätt. Å ena sidan frigör automatisering värdefull tid för kreativt skapande, men å andra sidan ställs nya krav på etiska riktlinjer och kvalitetssäkring.
 >
 > Avslutningsvis kan det konstateras att framtiden tillhör de organisationer som agerar proaktivt. Hur förbereder du din organisation för morgondagens utmaningar?
 
 ---
 
-## 2. Identifierade AI-mönster
+## 2. Identifierade mönster
 
-* **Mönster 2 (Landskapsinledning):** *"I en värld där digitaliseringen omformar spelplanen i grunden..."*
-* **Mönster 1 (Signifikansuppblåsning):** *"central roll"*, *"banbrytande genombrott"*, *"förändra i grunden"*.
-* **Mönster 9 & 17 (Negativ parallellism & Tankstrecksmissbruk):** *"Det handlar inte om teknik — det handlar om människors förmåga..."* med em-dash.
-* **Mönster 7 (Anglifieringsimporter):** *"omfamna utvecklingen"*, *"navigera förändringen"*, *"holistiskt sätt"*, *"agera proaktivt"*.
-* **Mönster 8 (Tandlöst frågehak som avslutning):** *"Hur förbereder du din organisation...?"* utan att ha svarat på frågan själv.
-
----
-
-## 3. Utkast till omskrivning
-
-> De flesta marknadsavdelningar som köpte AI-verktyg förra året producerar nu dubbelt så mycket innehåll, men har halverat engagemanget.
->
-> Problemet är inte verktygen, utan att vi dränker kunderna i text som ingen orkar läsa. Att skriva mer är inte samma sak som att säga något.
+* **2, Landskaps- och trenduppramning:** ”I en värld där digitaliseringen omformar spelplanen i grunden”.
+* **1, Signifikansuppblåsning:** ”central roll”, ”banbrytande genombrott”, ”förändra i grunden”, ”råder ingen tvekan om”.
+* **4, Vaga auktoriteter:** ”Branschkällor pekar på” utan namn, årtal eller länk.
+* **9, Negativ parallellism:** ”Det handlar inte om teknik — det handlar om människors förmåga”.
+* **17, Tankstrecksfrossa:** samma mening är delad med `—`.
+* **7, Anglifieringsimporter:** ”omfamnar utvecklingen”, ”navigera förändringen”, ”holistiskt sätt”, ”agera proaktivt”.
+* **8, Tretalsregeln och falsk balans:** ”Å ena sidan ... men å andra sidan” utan slutsats.
+* **5, Passiv formalitet och 12, utfyllnad:** ”kan det konstateras att”, ”Avslutningsvis”.
+* **29, Retorisk fråga som besvaras:** ”Hur förbereder du din organisation?” ställs i sista raden, och svaret uteblir. Den som skriver en debattartikel ska ha svaret själv.
 
 ---
 
-## 4. Självgranskning (Anti-AI Test)
+## 3. Svaret enligt standardläget
 
-**Vad avslöjar att utkastet fortfarande kan vara AI-genererat?**
-- "Dubbelt så mycket innehåll, men halverat engagemanget" är en träffsäker kontrast, men saknar konkret förankring i branschens verklighet.
-- Texten är för kort för att fungera som en komplett krönika.
+Det finns ingen brist på AI-verktyg i svensk marknadsföring. Det som saknas är någon som läser texten innan den publiceras.
 
-**Vad saknar texten för att låta skriven av en verklig person med en ståndpunkt?**
-- Egen yrkeserfarenhet eller observation från faktiska kunduppdrag, med en skarp slutsats om vad man borde göra istället.
+Branschbloggar fylls av inlägg som slutar med samma artiga sammanfattning. Ingen av dem innehåller en åsikt som någon är beredd att skriva under med sitt namn. När tröskeln för att producera text försvinner, försvinner också redaktörskapet.
+
+Att maskinerna kan skriva står klart. Om vi ska låta dem göra det utan att läsa efter är en annan fråga, och den har ingen ställt.
+
+### Vad jag ändrade
+
+* ”I en värld där digitaliseringen omformar spelplanen i grunden spelar artificiell intelligens en alltmer central roll” ströks, liksom ”Det råder ingen tvekan om att detta skifte representerar ett banbrytande genombrott som kommer att förändra marknadsföringen i grunden”. Två meningar som lovade en analys och lämnade ämnet.
+* ”Branschkällor pekar på att företag som inte omfamnar denna utveckling riskerar att hamna på efterkälken” ströks. Källan hade inget namn, och påståendet gick inte att kontrollera.
+* ”Det handlar inte om teknik — det handlar om människors förmåga att navigera förändringen på ett holistiskt sätt” ströks helt. Figuren och strecket försvann tillsammans med den.
+* ”Å ena sidan frigör automatisering värdefull tid för kreativt skapande, men å andra sidan ställs nya krav” ströks. Balansgången slutade i ingen slutsats, och en debattartikel behöver en.
+* ”Avslutningsvis kan det konstateras att framtiden tillhör de organisationer som agerar proaktivt” ströks. Övergångsordet, passiven och uppblåstheten i samma rad.
+* Frågan i slutet är utbytt mot ett påstående. Den som skriver en debattartikel ska ha svarat före läsaren.
+
+### Kvar för dig
+
+* Vilka branschkällor du menar, med namn och årtal, eller om påståendet ska bort helt.
+* Ett eget exempel från ditt arbete: en kampanj, en kund, ett misslyckande. Det är det som gör en krönika till någons.
+* Om texten ska ha en siffra. Exemplet som låg här före v4.0.0 hittade på både en leverantör och två procentsatser.
+* Vem som står som avsändare, och var den ska publiceras.
 
 ---
 
-## 5. Slutlig mänsklig version
+## Vad exemplet visar
 
-> Under 2024 fördubblade svenska marknadsavdelningar sin textproduktion med hjälp av LLM:er. Resultatet? Klickfrekvenserna i nyhetsbrev sjönk med 18 %, enligt data från Voyado.
->
-> Det förvånar ingen som faktiskt läser vad som publiceras. 
->
-> När tröskeln för att producera text försvinner, försvinner också redaktörskapet. Vi ser B2B-bloggar med tjugo artiklar i veckan där varje text slutar med samma tre artiga slutsatser och exakt noll åsikter. Ingen är beredd att skriva under med sitt eget namn, för ingen har faktiskt tänkt tanken bakom orden.
->
-> AI gör text gratis. Men uppmärksamhet har aldrig varit dyrare. De marknadschefer som vinner 2025 är de som drar ner volymen med 70 %, kastar ut de generiska SEO-artiklarna och betalar för skribenter som faktiskt har en ståndpunkt värd att försvara.
-
----
-
-## Varför denna version klarar granskning
-1. **Djärvt ställningstagande:** Texten attackerar ett faktiskt problem i branschen (volymhets på bekostnad av läsvärde).
-2. **Känsla av mänsklig observation:** *"Det förvånar ingen som faktiskt läser vad som publiceras"* är en naturlig och skarp mänsklig röst.
-3. **Konkreta siffror & källor:** Referensen till Voyados data och specifika siffror (18 %, 70 %) ger tyngd och hög perplexity.
+En ståndpunkt behöver inga påhittade data. Det som behövs är att någon vågar säga vad den menar, och att den som skriver står för det med sitt namn. Artikeln är kortare än råtexten och säger betydligt mer.

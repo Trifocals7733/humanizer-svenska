@@ -1,10 +1,10 @@
 # Exempel: Affärsskrivande
 
-Detta exempel visar bearbetningen av ett introduktionsmejl och förslag till en potentiell B2B-kund inom IT/SaaS.
+Ett introduktionsmejl till en potentiell B2B-kund. Råtexten är ett typexempel på modellskriven kall outreach: den låter som ett erbjudande och innehåller ingen uppgift om vad som säljs, till vem eller varför just nu.
 
 ---
 
-## 1. Råtext (AI-genererad text)
+## 1. Råtext
 
 > Hej Johan!
 >
@@ -14,62 +14,52 @@ Detta exempel visar bearbetningen av ett introduktionsmejl och förslag till en 
 >
 > Skulle du ha möjlighet att ta ett kort förutsättningslöst möte nästa vecka för att diskutera hur vi kan skapa mervärde för er organisation?
 >
-> Varma hälsningar,  
+> Varma hälsningar,
 > Andreas
 
 ---
 
-## 2. Identifierade AI-mönster
+## 2. Identifierade mönster
 
-* **Mönster 2 (Landskapsuppramning):** *"I dagens alltmer digitaliserade affärsklimat..."* – tom inledning som mottagaren läst tusen gånger.
-* **Mönster 1 (Signifikansuppblåsning):** *"avgörande"*, *"banbrytande verktyg"*, *"unik möjlighet"*.
-* **Mönster 7 (Anglifieringar):** *"proaktivt navigerar"*, *"ta ägarskap över"*, *"skapa mervärde"*.
-* **Mönster 15 (Kopulaundvikande):** *"utgör ett verktyg"*, *"representerar en möjlighet"* istället för enkla verb som *"är"* eller *"löser"*.
-* **Mönster 3 & 6 (Particip och nominalisering):** *"implementeringen av denna strategi bidrar till en ökad förståelse för..."*.
-* **Låg Burstiness:** Alla meningar är jämntjocka (20–25 ord).
-* **Fundamentstelhet:** Nästan varje mening börjar med pronomen eller allmänt subjekt.
-
----
-
-## 3. Utkast till omskrivning
-
-> Hej Johan,
->
-> De flesta e-handlare vi pratar med lägger runt tio timmar i veckan på att manuellt föra över orderrader mellan lager och affärssystem. 
->
-> Vi byggde en integration som gör det automatiskt i realtid. Hos Kök & Hem minskade det felplocken med 80 % under första månaden.
->
-> Har du 15 minuter på tisdag eller onsdag så visar jag hur kopplingen ser ut i praktiken?
+* **2, Landskaps- och trenduppramning:** ”I dagens alltmer digitaliserade affärsklimat” och ”den snabba teknologiska utvecklingen”. Inledning om tiden i stället för om ärendet.
+* **1, Signifikansuppblåsning:** ”avgörande”, ”banbrytande”, ”unik möjlighet”.
+* **6, Nominaliseringsöverdrift:** ”implementeringen av denna strategi”.
+* **7, Anglifieringsimporter:** ”proaktivt navigerar”, ”ta ägarskap över”, ”skapa mervärde”.
+* **15, Kopulaundvikande:** ”utgör ett banbrytande verktyg”, ”representerar en unik möjlighet”.
+* **3, Participfraser som falsk analys:** ”bidrar till en ökad förståelse för”, ”lyfter fram värdet av”.
+* **12, Utfyllnadsfraser:** ”Det är viktigt att notera att”.
+* **22, Falsk sammanfattningsfeber:** ”Sammantaget representerar detta”.
+* **Mönster 28, avsändarlös text:** mejlet har en underskrift men ingen iakttagelse. Ingenting i det tyder på att avsändaren vet något om mottagaren.
 
 ---
 
-## 4. Självgranskning (Anti-AI Test)
+## 3. Svaret enligt standardläget
 
-**Vad avslöjar att utkastet fortfarande kan vara AI-genererat?**
-- "Hos Kök & Hem minskade det felplocken..." är ett bra exempel, men om kunden inte känner till referensen kan det kännas som ett konstruerat försäljningspåstående.
-- Avslutningen är lite väl klassisk "cold email"-mall.
+Hej Johan!
 
-**Vad saknar texten för att låta skriven av en verklig person med en ståndpunkt?**
-- En personlig reflektion kring varför systemet integreras mot just deras stack eller bransch.
+Vår lösning automatiserar moment som i dag görs för hand i er affärsprocess.
+
+Har du möjlighet att ta ett kort möte nästa vecka? Då går vi igenom era behov.
+
+### Vad jag ändrade
+
+* ”I dagens alltmer digitaliserade affärsklimat är det avgörande att företag proaktivt navigerar de möjligheter och utmaningar som den snabba teknologiska utvecklingen medför” ströks. Inledningen sa inget om ämnet, och tre mönster satt i samma mening.
+* ”utgör ett banbrytande verktyg som möjliggör en mer effektiv och hållbar affärsprocess” blev ”automatiserar moment som i dag görs för hand i er affärsprocess”. Kopulaundvikandet och modordet är borta, funktionen står kvar.
+* ”hållbar” föll bort eftersom utkastet inte sa på vilket sätt processen skulle vara hållbar.
+* ”Det är viktigt att notera att implementeringen av denna strategi bidrar till en ökad förståelse för kundernas behov, vilket i sin tur lyfter fram värdet av ett datadrivet arbetssätt” ströks. Participfraserna pekade på en analys som inte fanns.
+* ”Sammantaget representerar detta en unik möjlighet att ta ägarskap över er digitala transformation och säkerställa långsiktig tillväxt” ströks.
+* ”förutsättningslöst möte” blev ”kort möte”, och ”skapa mervärde för er organisation” blev ”gå igenom era behov”. ”Varma hälsningar” står kvar, det är skribentens avslutning.
+
+### Kvar för dig
+
+* Vad lösningen heter, och vad den ersätter.
+* Vilka moment som i dag görs för hand, och hur lång tid de tar.
+* En siffra eller ett kundcase, om du har ett. Exemplet som låg här före v4.0.0 hittade på båda.
+* Vad ”hållbar” skulle betyda i den här affären.
+* Ett skäl att höra av sig just den här veckan.
 
 ---
 
-## 5. Slutlig mänsklig version
+## Vad exemplet visar
 
-> Hej Johan,
->
-> Jag såg att ni kör Visma för ekonomin och nyligen bytte e-handelsplattform. 
->
-> Vanligtvis brukar den övergången betyda att någon på lagret sitter och klistrar orderrader för hand varje morgon. Vi har en färdig koppling som skickar över saldon och orderdata automatiskt var femte minut, utan att ni behöver bygga om API:erna. 
->
-> Har ni redan löst synkningen internt, eller är det värt att vi tar tio minuter på telefon på torsdag förmiddag?
->
-> Hälsningar,  
-> Andreas
-
----
-
-## Varför denna version klarar granskning
-1. **Extrem variation i meningslängd (Burstiness):** Från korta konstateranden (12 ord) till naturligt resonerande meningar.
-2. **Hög Perplexity:** Specifika namn och termer (*Visma*, *orderrader*, *saldon*, *API:erna*) som bryter den statistiska förutsägbarheten.
-3. **Nordisk affärston:** Ödmjuk avslutning (*"Har ni redan löst det internt..."*) som visar respekt för mottagarens tid och intelligens.
+Ett mejl utan sakuppgifter går inte att göra starkare än så här. Varje försök att skriva det mer övertygande kräver en uppgift som bara avsändaren har. Det är därför **Kvar för dig** är längre än själva mejlet: att fylla listan är skribentens jobb, inte agentens.

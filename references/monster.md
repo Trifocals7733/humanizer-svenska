@@ -6,6 +6,8 @@ Varje markör har fyra eller fem fält: kännetecken, varför den avslöjar sig,
 
 ## Innehåll
 
+Markörerna står i nummerordning. Grupperna nedan är ett register, inte en disposition.
+
 - Uppblåst betydelse och falsk analys: 1, 2, 3, 4
 - Tom formalitet: 5, 6, 7
 - Struktur och retorik: 8, 9, 10, 11, 18, 29, 30, 31, 32
@@ -17,7 +19,7 @@ Varje markör har fyra eller fem fält: kännetecken, varför den avslöjar sig,
 
 ---
 
-## Uppblåst betydelse och falsk analys
+## Markörerna
 
 ### 1. Signifikansuppblåsning
 
@@ -51,10 +53,6 @@ Varje markör har fyra eller fem fält: kännetecken, varför den avslöjar sig,
 
 **Fix:** Namnge källan, årtalet och helst var den finns. Har skribenten ingen källa, stryk påståendet eller skriv det som sin egen iakttagelse. Hitta aldrig på en källa.
 
----
-
-## Tom formalitet
-
 ### 5. Passiv röst som falsk formalitet
 
 **Kännetecken:** det kan konstateras att, det bör påpekas att, det är viktigt att notera att, det har visat sig att, hänsyn bör tas till.
@@ -78,10 +76,6 @@ Varje markör har fyra eller fem fält: kännetecken, varför den avslöjar sig,
 **Varför:** Frasen är engelsk i varje led utom orden. Den går att översätta tillbaka utan förlust, vilket är hela testet.
 
 **Fix:** Byt till det svenska verb som gör jobbet: ansvara för, hantera, ge resultat, påverka, i sin helhet, enligt.
-
----
-
-## Struktur och retorik
 
 ### 8. Tretalsregeln och falsk balans
 
@@ -115,50 +109,6 @@ Varje markör har fyra eller fem fält: kännetecken, varför den avslöjar sig,
 
 **Fix:** Stryk. Svara på frågan i första meningen.
 
-### 18. "Inte bara X, utan även Y"
-
-**Kännetecken:** "Det är inte bara en plattform, utan även en partner", "Vi effektiviserar inte bara flödet, utan även organisationen".
-
-**Varför:** Samma figur som 9, i positiv form. X förminskas för att Y ska lyftas.
-
-**Fix:** Skriv meningen om så att Y står själv. Kan den inte det, var Y ingen poäng.
-
-### 29. Retorisk fråga som besvaras direkt
-
-**Kännetecken:** "Vad betyder det här för er? Det betyder att ...", "Varför då? Därför att ...".
-
-**Varför:** Frågan är en scenanvisning till skribenten själv. Läsaren hade inte ställt den.
-
-**Fix:** Stryk frågan och skriv svaret.
-
-### 30. Kolon som spänningsknep
-
-**Kännetecken:** en nominalfras, kolon, och därefter poängen med liten bokstav: "Detaljen som avgör: en separat kontroll läser varje rad."
-
-**Varför:** Kolonet används för att bygga paus, inte för att införa en lista eller ett citat. Det är en engelsk rubrikgest översatt till löptext.
-
-**Fix:** Skriv en vanlig mening med subjekt och verb.
-
-### 31. Den djupa slutraden
-
-**Kännetecken:** texten slutar med en kort mening som gör poängen till en metafor eller en aforism: "För det är så tillit byggs."
-
-**Varför:** Raden är byggd för att skärmdumpas, inte för att läsas. Den upprepar något texten redan sagt, i vackrare form. Ofta är den också kortare än alla andra meningar, vilket syns om man bara mäter.
-
-**Fix:** Stryk raden. Avsluta på den mest konkreta sanna meningen som redan står i texten. Skriv inte om den till en bättre metafor.
-
-### 32. Jämna stycken och inläggets form
-
-**Kännetecken:** alla stycken är en till tre meningar, ett ensamt fragment står som trumslag, en lista är staplad i kolumn för rytmens skull, sista raden är kortast. Mätbart: styckelängder och första ordet i varje stycke.
-
-**Varför:** De andra markörerna sitter i enskilda meningar och överlever därför en genomgång som görs mening för mening. Den här sitter i texten som helhet. En text kan vara fri från varje ord på den här listan och ändå låta som ett inlägg.
-
-**Fix:** Bryt symmetrin av innehållsskäl. Låt ett stycke löpa långt för att resonemanget kräver det. Skriv listan som prosa om den inte är en riktig lista. Läs bara styckelängderna och första ordet i varje stycke: låter det som en komponerad sekvens eller som någon som förklarar något?
-
----
-
-## Utfyllnad, gardering och artighet
-
 ### 12. Utfyllnadsfraser
 
 **Kännetecken:** i syfte att uppnå, på grund av det faktum att, i nuläget, i dagsläget, i händelse av att, har förmågan att, med avseende på.
@@ -183,26 +133,6 @@ Varje markör har fyra eller fem fält: kännetecken, varför den avslöjar sig,
 
 **Fix:** Stryk. Behöver mottagaren veta att underlaget är osäkert, säg det med ett konkret skäl.
 
-### 21. Syntetisk tröst och påklistrad empati
-
-**Kännetecken:** "Vi förstår att det här kan kännas överväldigande", "Det är helt naturligt att känna oro inför förändring".
-
-**Varför:** Tonen är terapeutisk i ett sammanhang som inte är terapi. Den låtsas omtanke i stället för att lösa problemet.
-
-**Fix:** Var saklig och respektfull. Beskriv nästa steg, tidsramen och vem mottagaren kan fråga.
-
-### 22. Falsk sammanfattningsfeber
-
-**Kännetecken:** rubrikerna "Sammanfattningsvis", "Slutsats", "Viktiga lärdomar" i en text under 300 ord, eller en avslutande punkt som upprepar texten.
-
-**Varför:** Skoluppsatsens form. Läsaren var precis där.
-
-**Fix:** Avsluta på den sista konkreta poängen, på frågan, eller på nästa steg.
-
----
-
-## Kopula, modeord och metakommentar
-
 ### 15. Kopulaundvikande
 
 **Kännetecken:** "utgör en viktig del", "representerar ett steg framåt", "fungerar som en brygga", "innebär en förutsättning".
@@ -218,6 +148,22 @@ Varje markör har fyra eller fem fält: kännetecken, varför den avslöjar sig,
 **Varför:** Formen ser strukturerad ut utan att innehållet är strukturerat. Språkrådet avråder dessutom från mycket fetstil och versaler i löptext.
 
 **Fix:** Prosa när innehållet är resonemang. Lista när det är villkor, steg eller specifikationer, och då utan emoji och utan fetstil i varje led.
+
+### 17. Tankstrecksfrossa
+
+**Kännetecken:** `—` mitt i meningar, ofta två gånger per stycke, för att skjuta in en parentes eller en poäng.
+
+**Varför:** Det långa strecket är amerikanskt. Svenska skrivregler har ett eget tankstreck, `–`, och det används sparsamt. När strecket ersätter komma, punkt och parentes i varje mening är det ett tecken på att meningen är byggd på engelska.
+
+**Fix:** Punkt, komma eller parentes. Se `typografi.md` för var `–` faktiskt hör hemma.
+
+### 18. "Inte bara X, utan även Y"
+
+**Kännetecken:** "Det är inte bara en plattform, utan även en partner", "Vi effektiviserar inte bara flödet, utan även organisationen".
+
+**Varför:** Samma figur som 9, i positiv form. X förminskas för att Y ska lyftas.
+
+**Fix:** Skriv meningen om så att Y står själv. Kan den inte det, var Y ingen poäng.
 
 ### 19. Moderna modord och säljfloskler
 
@@ -235,29 +181,21 @@ Varje markör har fyra eller fem fält: kännetecken, varför den avslöjar sig,
 
 **Fix:** Stryk metakommentaren. Börja på innehållet.
 
----
+### 21. Syntetisk tröst och påklistrad empati
 
-## Typografi och tankstreck
+**Kännetecken:** "Vi förstår att det här kan kännas överväldigande", "Det är helt naturligt att känna oro inför förändring".
 
-### 17. Tankstrecksfrossa
+**Varför:** Tonen är terapeutisk i ett sammanhang som inte är terapi. Den låtsas omtanke i stället för att lösa problemet.
 
-**Kännetecken:** `—` mitt i meningar, ofta två gånger per stycke, för att skjuta in en parentes eller en poäng.
+**Fix:** Var saklig och respektfull. Beskriv nästa steg, tidsramen och vem mottagaren kan fråga.
 
-**Varför:** Det långa strecket är amerikanskt. Svenska skrivregler har ett eget tankstreck, `–`, och det används sparsamt. När strecket ersätter komma, punkt och parentes i varje mening är det ett tecken på att meningen är byggd på engelska.
+### 22. Falsk sammanfattningsfeber
 
-**Fix:** Punkt, komma eller parentes. Se `typografi.md` för var `–` faktiskt hör hemma.
+**Kännetecken:** rubrikerna "Sammanfattningsvis", "Slutsats", "Viktiga lärdomar" i en text under 300 ord, eller en avslutande punkt som upprepar texten.
 
-### 33. Engelsk typografi i svensk text
+**Varför:** Skoluppsatsens form. Läsaren var precis där.
 
-**Kännetecken:** `“ord”` eller `"ord"` i stället för `”ord”`, `12.5%` i stället för `12,5 %`, `1,450` i stället för `1 450`, "Nya Funktioner I Faktureringen", punkt efter rubrik, "Juli 30, 2026", `Jakob's`.
-
-**Varför:** Tecknen avslöjar vilket språk texten tänktes på. En svensk läsare reagerar på dem även när varje ord är riktigt.
-
-**Fix:** Se `typografi.md`. Formreglerna där är fel, inte stilfrågor, och de gäller även det du själv skriver i svaret.
-
----
-
-## Ord som är svenska men engelska i kombination
+**Fix:** Avsluta på den sista konkreta poängen, på frågan, eller på nästa steg.
 
 ### 23. Ord-för-ord-svenska
 
@@ -306,6 +244,46 @@ Varje markör har fyra eller fem fält: kännetecken, varför den avslöjar sig,
 **Varför:** Modellen har ingen egen iakttagelse och generaliserar därför. En människa som skriver ett mejl har alltid ett skäl som går att peka på.
 
 **Fix:** Sätt en avsändare med något den har sett: vem som sa det, när, och vad som hände. Finns ingen sådan i underlaget, lägg frågan under **Kvar för dig** i stället för att hitta på en.
+
+### 29. Retorisk fråga som besvaras direkt
+
+**Kännetecken:** "Vad betyder det här för er? Det betyder att ...", "Varför då? Därför att ...".
+
+**Varför:** Frågan är en scenanvisning till skribenten själv. Läsaren hade inte ställt den.
+
+**Fix:** Stryk frågan och skriv svaret.
+
+### 30. Kolon som spänningsknep
+
+**Kännetecken:** en nominalfras, kolon, och därefter poängen med liten bokstav: "Detaljen som avgör: en separat kontroll läser varje rad."
+
+**Varför:** Kolonet används för att bygga paus, inte för att införa en lista eller ett citat. Det är en engelsk rubrikgest översatt till löptext.
+
+**Fix:** Skriv en vanlig mening med subjekt och verb.
+
+### 31. Den djupa slutraden
+
+**Kännetecken:** texten slutar med en kort mening som gör poängen till en metafor eller en aforism: "För det är så tillit byggs."
+
+**Varför:** Raden är byggd för att skärmdumpas, inte för att läsas. Den upprepar något texten redan sagt, i vackrare form. Ofta är den också kortare än alla andra meningar, vilket syns om man bara mäter.
+
+**Fix:** Stryk raden. Avsluta på den mest konkreta sanna meningen som redan står i texten. Skriv inte om den till en bättre metafor.
+
+### 32. Jämna stycken och inläggets form
+
+**Kännetecken:** alla stycken är en till tre meningar, ett ensamt fragment står som trumslag, en lista är staplad i kolumn för rytmens skull, sista raden är kortast. Mätbart: styckelängder och första ordet i varje stycke.
+
+**Varför:** De andra markörerna sitter i enskilda meningar och överlever därför en genomgång som görs mening för mening. Den här sitter i texten som helhet. En text kan vara fri från varje ord på den här listan och ändå låta som ett inlägg.
+
+**Fix:** Bryt symmetrin av innehållsskäl. Låt ett stycke löpa långt för att resonemanget kräver det. Skriv listan som prosa om den inte är en riktig lista. Läs bara styckelängderna och första ordet i varje stycke: låter det som en komponerad sekvens eller som någon som förklarar något?
+
+### 33. Engelsk typografi i svensk text
+
+**Kännetecken:** `“ord”` eller `"ord"` i stället för `”ord”`, `12.5%` i stället för `12,5 %`, `1,450` i stället för `1 450`, "Nya Funktioner I Faktureringen", punkt efter rubrik, "Juli 30, 2026", `Jakob's`.
+
+**Varför:** Tecknen avslöjar vilket språk texten tänktes på. En svensk läsare reagerar på dem även när varje ord är riktigt.
+
+**Fix:** Se `typografi.md`. Formreglerna där är fel, inte stilfrågor, och de gäller även det du själv skriver i svaret.
 
 ---
 
