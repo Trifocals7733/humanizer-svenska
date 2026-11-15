@@ -14,7 +14,7 @@ Detta dokument tillhandahåller instruktioner och riktlinjer för alla AI-agente
 - **`genres/`:** Register- och nischguider för olika texttyper (affärstext, presentationer, rapporter, artiklar, sociala medier, klarspråk, e-handel, rekrytering, kunddialog).
 - **`examples/`:** Sex fullständiga exempel i det format agenten ska leverera: råtext, identifierade mönster, och svaret med **Vad jag ändrade** och **Kvar för dig**. Inget exempel fyller i en sakuppgift eller en ståndpunkt som inte stod i råtexten. Läs `examples/README.md` först.
 - **`platforms/`:** Plattformsspecifika konfigurationer och instruktioner (`pi/`, `cursor/`, `chatgpt/`, `copilot/`, `claude/`). De sammanfattar reglerna och pekar på `SKILL.md` i stället för att duplicera dem.
-- **`tests/benchmark_prompts.md`:** Testsvit med koncentrerade AI-fällor för att utvärdera språkmodeller.
+- **`tests/benchmark_prompts.md`:** Sju test för att utvärdera språkmodeller: fyra texter fulla av AI-fällor, ett om sakuppgifter, ett om ord som ändrar betydelsen och ett om eget skrivande.
 - **`README.md` och `CHANGELOG.md`:** Dokumentation och versionshistorik.
 
 ---
