@@ -28,7 +28,7 @@
 Varje uppgift i högerkolumnen står redan i vänsterkolumnen: Visma, lagersystemet, tre dagar och 20 minuter. Inget är tillagt, och talen har kvar sin form.
 
 > [!TIP]
-> **Varför reagerar läsaren?** Det beror sällan på enstaka ord. AI-text avslöjas oftare av formen: meningar som är ungefär lika långa, meningsbörjan som nästan alltid är subjekt och verb, och det amerikanska strecket `—`. Därför arbetar standarden med formen lika mycket som med orden.
+> **Varför reagerar läsaren?** Det beror sällan på enstaka ord. AI-text avslöjas oftare av formen: meningar som är ungefär lika långa, meningsbörjan som påfallande ofta är subjekt och verb, och det amerikanska strecket `—`. Därför arbetar standarden med formen lika mycket som med orden.
 
 ---
 
@@ -36,7 +36,7 @@ Varje uppgift i högerkolumnen står redan i vänsterkolumnen: Visma, lagersyste
 1. [Varför detta projekt finns](#varför-detta-projekt-finns)
 2. [Snabbstart per plattform](#snabbstart-per-plattform)
 3. [Fyra arbetslägen](#fyra-arbetslägen)
-4. [Skyddet mot AI-fällan (Anti-AI Engine)](#skyddet-mot-ai-fällan-anti-ai-engine)
+4. [Skyddet mot AI-fällan (anti-AI-motorn)](#skyddet-mot-ai-fällan-anti-ai-motorn)
 5. [De 33 AI-mönstren](#de-33-ai-mönstren)
 6. [Ord som ändrar betydelsen](#ord-som-ändrar-betydelsen)
 7. [Nischguider och textgenrer](#nischguider-och-textgenrer)
@@ -67,12 +67,12 @@ De flesta AI-humanizers och prompt-instruktioner är utvecklade för engelska. N
 
 Projektet består av ren Markdown och fungerar i alla utvecklingsmiljöer:
 
-### Universal installation via skills.sh CLI
+### Installation via skills.sh
 Installera skillen i dina kompatibla agenter med ett kommando:
 ```bash
 npx skills add Trifocals7733/humanizer-svenska
 ```
-En installerad kopia uppdateras inte av sig själv. Kör kommandot igen när en ny version kommer.
+En installerad kopia uppdateras inte av sig själv. Kör `npx skills update` när en ny version kommer.
 
 ### 1. Pi Agents (terminalagent)
 Be Pi läsa `SKILL.md` direkt i sessionen:
@@ -86,7 +86,7 @@ Se full guide i [`platforms/pi/README.md`](./platforms/pi/README.md).
 Kopiera [`platforms/cursor/humanizer.mdc`](./platforms/cursor/humanizer.mdc) till `.cursor/rules/humanizer.mdc`. Regeln aktiveras automatiskt för markdown-filer och texter.
 
 ### 3. ChatGPT, Custom GPTs och Gemini Gems
-Kopiera den färdiga systemprompten från [`platforms/chatgpt/system-prompt.md`](./platforms/chatgpt/system-prompt.md). Kortversionen ryms i fältet *Anpassa instruktioner*, den fulla passar en Custom GPT eller en Gem.
+Kopiera den färdiga systemprompten från [`platforms/chatgpt/system-prompt.md`](./platforms/chatgpt/system-prompt.md). Kortversionen ryms i fältet *Anpassa instruktioner*, och den fulla passar en Custom GPT eller en Gem.
 
 ### 4. Claude (Claude Code och Claude-appen)
 * **Claude Code:** Klona repot till `~/.claude/skills/humanizer-svenska`, eller kör `npx skills add`, och anropa `/humanizer-svenska`.
@@ -113,13 +113,13 @@ Du styr vad agenten lämnar tillbaka genom att ange ett läge:
 
 ---
 
-## Skyddet mot AI-fällan (Anti-AI Engine)
+## Skyddet mot AI-fällan (anti-AI-motorn)
 
 Många tror att det räcker med att byta ut några enstaka klyschor. Men texten avslöjas av strukturen, och en van läsare känner igen den utan att kunna peka på varför.
 
 AI-detektorer är inget mått. De ger falska träffar på text som skrivits av människor, och de kan inte skilja på en städad text och en mänsklig. Standarden siktar därför på läsaren: en människa som arbetar med språk, och som märker när något inte stämmer.
 
-Standarden följer sex strukturella principer:
+Standarden följer sex principer:
 
 1. **Radikal burstiness (meningslängdsvariation):**  
    Modelltext håller sig gärna runt 15–20 ord per mening. Standarden kräver tvära kast: en mening på några ord, sedan en lång period där tanken kräver det, sedan ett konstaterande. Ingen fast mall, för en mall blir en ny metronom. En rad korta hackiga meningar i följd är också en markör.
@@ -135,7 +135,7 @@ Standarden följer sex strukturella principer:
    Svensk yrkeston bygger på saklighet, direkthet och understatement. Texten vågar prioritera bort det som inte fungerar och slutar låtsas att allt är problemfritt. Ståndpunkten är skribentens: agenten skriver fram den som finns i utkastet och hittar aldrig på en egen.
 
 > [!IMPORTANT]
-> **Faktaskyddet går före allt annat.** Belopp, datum, namn och källor rörs aldrig. Konkretion får bara bygga på uppgifter som redan finns i utkastet. Det som inte går att skriva konkret utan påhittade fakta hamnar under **Kvar för dig**, eller som en hakparentes i eget skrivande, aldrig i texten.
+> **Faktaskyddet går före allt annat.** Belopp, datum, namn och källor rörs aldrig. Konkretion får bara bygga på uppgifter som redan finns i utkastet. Det som inte går att skriva konkret utan påhittade fakta hamnar under **Kvar för dig**, och i eget skrivande som en hakparentes. En påhittad uppgift hamnar aldrig i texten.
 
 ---
 
@@ -190,7 +190,7 @@ Huvuddokumentet [`SKILL.md`](./SKILL.md) innehåller arbetsgången och mönstren
 
 ## Ord som ändrar betydelsen
 
-Vissa fel är inte stil utan innehåll. *Tack vare* säger att orsaken var något att tacka för. *Förväntas* säger att någon hoppas på det. *Ska* gör ett förslag till ett beslut, och 2 % är inte samma sak som 2 procentenheter. Till det kommer falska vänner som *eventuellt* för eventually, *realisera* för realize och *biljon* för billion.
+Vissa fel ändrar vad texten säger. *Tack vare* säger att orsaken var något att tacka för. *Förväntas* säger att någon hoppas på det. *Ska* gör ett förslag till ett beslut, och 2 % är inte samma sak som 2 procentenheter. Till det kommer falska vänner som *eventuellt* för eventually, *realisera* för realize och *biljon* för billion.
 
 Agenten rättar dem när utkastet visar vad som menas. Rör ordet en siffra eller ett åtagande låter agenten det stå och frågar under **Kvar för dig**. Listorna, kontrollerade mot TT-språket, finns i [`references/svenska-ord.md`](./references/svenska-ord.md).
 
@@ -288,7 +288,7 @@ Ingen av dem fyller i en sakuppgift eller en ståndpunkt som inte stod i råtext
 
 Det som skiljer standarden från en vanlig ordlista ligger i [`references/`](./references/):
 
-* **[`sjalvkontroll.md`](./references/sjalvkontroll.md):** 52 punkter som agenten kör före varje svar, med godkänt eller ej godkänt. Vid ej godkänt rättas texten och listan körs om. Användaren ser bara det läget visar, i standardläget texten, **Vad jag ändrade** och **Kvar för dig**.
+* **[`sjalvkontroll.md`](./references/sjalvkontroll.md):** 52 punkter som agenten kör före varje svar, med godkänt eller ej godkänt. Vid ej godkänt rättas texten och listan körs om. Användaren ser aldrig listan, bara det som läget lämnar tillbaka.
 * **[`svenska-ord.md`](./references/svenska-ord.md)** och **[`typografi.md`](./references/typografi.md):** utbyteslistor för AI-ord, kanslisvenska, stel affärssvenska, ord-för-ord-svenska, falska vänner och ord som ändrar betydelsen, samt de svenska formreglerna för tecken, kommatering, siffror och rubriker.
 * **[`frekvenstest.md`](./references/frekvenstest.md):** ett valfritt test mot Språkbankens korpusar, för agenter med webbåtkomst.
 
@@ -309,7 +309,7 @@ Vill du utvärdera hur bra en modell eller agent presterar tillsammans med stand
 * **% och kr som standard**, med mellanslag före. Utskrivet i talmanus.
 * **Begränsningar:** Standarden är byggd för professionell sakprosa. Juridisk, akademisk och vetenskaplig svenska har egna konventioner. Ordvalen i AI-text ändras med nya modeller, så listorna behöver ses över, och korpusarna i frekvenstestet är mest från 2010-talet.
 
-Källorna för formreglerna och ordvalen, Språkrådet, TT-språket, Regeringskansliets Svarta listan och Språkbanken, står sist i [`references/monster.md`](./references/monster.md).
+Källorna för formreglerna och ordvalen står sist i [`references/monster.md`](./references/monster.md): Språkrådet, TT-språket, Regeringskansliets Svarta listan och Språkbanken.
 
 ---
 

@@ -25,7 +25,7 @@ Har du redan repot lokalt kan du länka det i stället, så att skillen följer 
 ln -s "$(pwd)" ~/.claude/skills/humanizer-svenska
 ```
 
-En kopia som installerats med `npx skills add` uppdateras inte av sig själv. Kör kommandot igen efter en ny version.
+En kopia som installerats med `npx skills add` uppdateras inte av sig själv. Kör `npx skills update` efter en ny version.
 
 ### Användning i Claude Code
 När skillen är installerad kan du anropa den direkt i chatten:
