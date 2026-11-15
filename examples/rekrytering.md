@@ -26,11 +26,11 @@ En platsannons för en projektledare. Råtexten innehåller ingen uppgift om fö
 ## 2. Identifierade mönster
 
 * **2, Landskaps- och trenduppramning:** ”I en snabbrörlig och ständigt föränderlig värld”.
-* **17 och 18, tankstreck och ”inte bara X, utan även Y”:** ”du inte bara en i mängden — du blir en del av vår familj”. Två mönster i en mening.
-* **7, Anglifieringsimporter:** ”navigerar framtidens utmaningar”, ”driva från ax till limpa”, ”sömlös kommunikation”, ”holistiskt arbetssätt”.
-* **19, Modeord:** ”sömlös”, ”dynamisk miljö”, ”spännande resa”.
+* **17, Tankstrecksfrossa och 18, Inte bara X, utan även Y:** ”du inte bara en i mängden — du blir en del av vår familj”. Två mönster i en mening.
+* **7, Anglifieringsimporter:** ”navigerar framtidens utmaningar”, ”holistiskt arbetssätt”, ”skapar mervärde”.
+* **19, Modeord och säljfloskler:** ”sömlös”, ”dynamisk miljö”, ”spännande resa”.
 * **1, Signifikansuppblåsning:** ”vår nya stjärna”, ”fantastiska team”, ”göra en skillnad på riktigt”.
-* **8, Tretalsregeln:** ”struktur, ordning och reda”, ”strukturerad, flexibel och lösningsorienterad”.
+* **8, Tretalsregeln och falsk balans:** ”struktur, ordning och reda”, ”strukturerad, flexibel och lösningsorienterad”.
 * **28, Avsändarlös text:** annonsen har ingen avsändare, ingen ort, ingen kontaktperson och inga villkor. Läsaren får veta hur det känns att jobba där, inte vad jobbet är.
 
 ---
@@ -39,7 +39,7 @@ En platsannons för en projektledare. Råtexten innehåller ingen uppgift om fö
 
 Vi söker en projektledare.
 
-Du ska driva projekt från start till mål och hålla ihop kommunikationen mellan de intressenter som är inblandade. Vi söker dig som har ordning på detaljerna, som trivs när tempot är högt och som hittar lösningar när förutsättningarna ändras.
+Du ska driva komplexa projekt från ax till limpa och hålla ihop kommunikationen mellan de intressenter som är inblandade. Vi söker dig som har ordning på detaljerna, som trivs när tempot är högt och som hittar lösningar när förutsättningarna ändras.
 
 Skicka in din ansökan.
 
@@ -48,7 +48,7 @@ Skicka in din ansökan.
 * ”Är du vår nya stjärna? Vi söker en driven projektledare som brinner för förändring!” blev ”Vi söker en projektledare”. Rubriken sa inget om rollen, och ”brinner för” är en floskel som inte går att bedöma.
 * ”I en snabbrörlig och ständigt föränderlig värld söker vi nu en engagerad kollega till vårt fantastiska team” ströks. Inledningen och ”fantastiska” föll i samma mening.
 * ”Hos oss blir du inte bara en i mängden — du blir en del av vår familj där vi tillsammans navigerar framtidens utmaningar” ströks. Familjeanspråket är ett löfte som ingen annons kan infria, och strecket försvann med meningen.
-* ”I rollen som spindeln i nätet kommer du att agera proaktivt och driva komplexa projekt från ax till limpa” blev ”Du ska driva projekt från start till mål”. Fyra bildliga uttryck blev ett rakt verb.
+* ”I rollen som spindeln i nätet kommer du att agera proaktivt och driva komplexa projekt från ax till limpa” blev ”Du ska driva komplexa projekt från ax till limpa”. ”Spindeln i nätet” och ”agera proaktivt” sa inget om arbetet. ”Från ax till limpa” är skribentens svenska och står kvar.
 * ”Du säkerställer en sömlös kommunikation mellan olika intressenter och möjliggör ett holistiskt arbetssätt som skapar mervärde” blev ”hålla ihop kommunikationen mellan de intressenter som är inblandade”. Resten sa inget om arbetsuppgiften.
 * Kravlistan med fyra punkter skrevs som en mening. Tre av punkterna var samma egenskap i olika ord, och den fjärde gick inte att bedöma.
 * ”Skicka in din ansökan redan idag och bli en del av vår spännande resa!” blev ”Skicka in din ansökan”.

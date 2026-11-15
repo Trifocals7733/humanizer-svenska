@@ -18,20 +18,20 @@ En exekutiv sammanfattning ur en branschrapport om hållbarhet i svensk detaljha
 * **5, Passiv formalitet:** ”Det kan konstateras att”.
 * **4, Vaga auktoriteter:** ”Experter menar att” utan namn och utan dataunderlag.
 * **7, Anglifieringsimporter:** ”holistisk strategi”, ”agera proaktivt”, ”ta ägarskap över processen”.
-* **8, Falsk balans:** ”Å ena sidan ... å andra sidan” som inte landar i något.
+* **8, Tretalsregeln och falsk balans:** ”Å ena sidan ... å andra sidan” som inte landar i något.
 * **1, Signifikansuppblåsning:** ”möjligheterna är stora”, ”betydande förändring”.
-* **12 och 22, utfyllnad och sammanfattningsfeber:** ”Avslutningsvis kan vi konstatera att”.
+* **12, Utfyllnadsfraser och 22, Falsk sammanfattningsfeber:** ”Avslutningsvis kan vi konstatera att”.
 
 ---
 
 ## 3. Svaret enligt standardläget
 
-Svensk detaljhandel står under två krav samtidigt. Lagstiftningen skärps, och kunderna ändrar sitt beteende. Rapporten handlar om hur branschen hanterar det.
+Svensk detaljhandel förändras, både genom regulatoriska krav och genom att kunderna ändrar sitt beteende. Rapporten handlar om hur branschen kan arbeta strukturerat med hållbarhet.
 
 ### Vad jag ändrade
 
-* ”Denna rapport belyser vikten av ett strukturerat förhållningssätt till hållbarhetsarbete” blev ”Rapporten handlar om hur branschen hanterar det”. Participfrasen påstod att rapporten visade något.
-* ”Det kan konstateras att branschen befinner sig i en fas av betydande förändring, driven av såväl regulatoriska krav som förändrade konsumentbeteenden” blev ”Lagstiftningen skärps, och kunderna ändrar sitt beteende”.
+* ”Denna rapport belyser vikten av ett strukturerat förhållningssätt till hållbarhetsarbete” blev ”Rapporten handlar om hur branschen kan arbeta strukturerat med hållbarhet”. Participfrasen påstod att rapporten visade något. Ämnet står kvar.
+* ”Det kan konstateras att branschen befinner sig i en fas av betydande förändring, driven av såväl regulatoriska krav som förändrade konsumentbeteenden” blev ”Svensk detaljhandel förändras, både genom regulatoriska krav och genom att kunderna ändrar sitt beteende”. Passiven och uppblåsningen är borta, de två drivkrafterna står kvar.
 * ”Experter menar att företag som inte anpassar sig riskerar att förlora marknadsandelar” ströks. Källan hade inget namn och påståendet inget underlag.
 * ”Rapporten understryker behovet av en holistisk strategi som tar hänsyn till samtliga intressenter” ströks helt.
 * ”Å ena sidan erbjuder den gröna omställningen stora möjligheter för innovation och tillväxt, å andra sidan ställs höga krav på transparens och datakvalitet” ströks. Balansgången sa att allt både är en möjlighet och ett problem, vilket inte är en slutsats.

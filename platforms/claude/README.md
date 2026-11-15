@@ -1,21 +1,31 @@
-# Användning med Anthropic Claude (Claude Code & Claude.ai)
+# Användning med Claude (Claude Code och Claude-appen)
 
-`humanizer-svenska` är fullt bakåtkompatibel med Anthropic Claude och kan användas både i **Claude Code** (terminalverktyget) och på **Claude.ai** (webb/projekt).
+`humanizer-svenska` fungerar både i **Claude Code** och i Claude-appen.
 
 ---
 
-## 1. Claude Code (Terminal)
+## 1. Claude Code
 
 ### Installation som skill
-Kopiera eller klona detta arkiv till din lokala skills-katalog:
+Klona repot till din skills-katalog:
 
 ```bash
-# Klona direkt
-git clone https://github.com/humanizer-svenska.git ~/.claude/skills/humanizer-svenska
+git clone https://github.com/Trifocals7733/humanizer-svenska.git ~/.claude/skills/humanizer-svenska
+```
 
-# Eller skapa en symlänk om du redan har repot nedladdat:
+Eller installera via skills.sh:
+
+```bash
+npx skills add Trifocals7733/humanizer-svenska
+```
+
+Har du redan repot lokalt kan du länka det i stället, så att skillen följer med när du drar ner nya versioner:
+
+```bash
 ln -s "$(pwd)" ~/.claude/skills/humanizer-svenska
 ```
+
+En kopia som installerats med `npx skills add` uppdateras inte av sig själv. Kör kommandot igen efter en ny version.
 
 ### Användning i Claude Code
 När skillen är installerad kan du anropa den direkt i chatten:
@@ -27,7 +37,7 @@ När skillen är installerad kan du anropa den direkt i chatten:
 # Med angiven texttyp:
 /humanizer-svenska rapport "Klistra in din text här"
 
-# Snabbtvätt utan reflektion:
+# Snabbtvätt utan förklaringar:
 /humanizer-svenska --snabb "Klistra in din text här"
 
 # Redaktörsgranskning:
@@ -35,16 +45,21 @@ När skillen är installerad kan du anropa den direkt i chatten:
 ```
 
 Du kan även be Claude direkt:
-> *"Läs SKILL.md och humanisera rapporten i docs/sammanfattning.md"*
+> *”Läs SKILL.md och humanisera rapporten i docs/sammanfattning.md”*
 
-Skillen är byggd för progressiv laddning. `SKILL.md` är ingången och beskriver arbetsgången. Claude läser `references/` bara när den behöver dem: `monster.md` för att namnge ett mönster, `svenska-ord.md` för ett konkret utbyte, `typografi.md` för formregler, `sjalvkontroll.md` före varje svar. Låt katalogen `references/` ligga kvar bredvid `SKILL.md`, annars tappar skillen halva sitt innehåll.
+När Claude själv skriver svensk text, ett mejl, ett inlägg eller dokumentation, gäller läget Eget skrivande: bara texten, med hakparentes där en uppgift saknas.
+
+Skillen är byggd för progressiv laddning. `SKILL.md` är ingången och beskriver arbetsgången. Claude läser `references/` bara när den behöver dem: `monster.md` för att förklara ett mönster, `svenska-ord.md` för ett konkret utbyte eller en falsk vän, `typografi.md` för formregler, `sjalvkontroll.md` före varje svar och `frekvenstest.md` när en fras är tveksam. Låt katalogerna `references/`, `genres/` och `examples/` ligga kvar bredvid `SKILL.md`, annars tappar skillen halva sitt innehåll.
 
 ---
 
-## 2. Claude.ai Projects (Webbgränssnitt)
+## 2. Claude-appen
 
-1. Skapa eller öppna ett projekt i [Claude.ai](https://claude.ai).
-2. Klicka på **Set Project Instructions**.
-3. Klistra in innehållet från `platforms/chatgpt/system-prompt.md` i fältet för projektinstruktioner.
-4. Ladda gärna upp `SKILL.md` som en projektresurs (*Project Knowledge*).
-5. Nu humaniserar Claude all svensk text automatiskt i alla chattar inom det projektet!
+**Som skill:** packa hela mappen som en zip-fil, med `SKILL.md`, `references/`, `genres/` och `examples/`, och ladda upp den bland skills i inställningarna. Laddar du bara upp `SKILL.md` försvinner referensfilerna.
+
+**Som projektinstruktion:**
+1. Skapa eller öppna ett projekt.
+2. Klistra in den fulla versionen från `platforms/chatgpt/system-prompt.md` i projektets instruktioner.
+3. Ladda gärna upp `SKILL.md` och `references/` som projektfiler.
+
+Då följer Claude reglerna för svensk text i alla chattar i projektet.

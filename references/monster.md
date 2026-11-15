@@ -4,6 +4,8 @@ Läs den här filen när du ska namnge ett mönster exakt, förklara för en skr
 
 Varje markör har fyra eller fem fält: kännetecken, varför den avslöjar sig, fix, och källäge. Källan anges bara när det finns en auktoritativ svensk källa. Övriga markörer är dokumenterade genom observation av svensk modelltext och är märkta som det. Det står i slutet av filen vilka som saknar källa.
 
+Rubrikerna är mönstrens namn. Tabellen i `SKILL.md`, README och AGENTS.md använder samma namn, och i granskningsläget skrivs namnet ordagrant.
+
 ## Innehåll
 
 Markörerna står i nummerordning. Grupperna nedan är ett register, inte en disposition.
@@ -31,7 +33,7 @@ Markörerna står i nummerordning. Grupperna nedan är ett register, inte en dis
 
 ### 2. Landskaps- och trenduppramning
 
-**Kännetecken:** i en alltmer digitaliserad värld, i en föränderlig omvärld, i takt med den snabba tekniska utvecklingen, i ett allt mer komplext landskap, spelplanen ritas om.
+**Kännetecken:** i en alltmer digitaliserad värld, i en föränderlig omvärld, i takt med den snabba tekniska utvecklingen, i ett allt mer komplext landskap, spelplanen ritas om, trots utmaningarna finns stora möjligheter.
 
 **Varför:** Inledningen säger ingenting om textens ämne, bara om tiden vi lever i. Den finns för att fylla första stycket. En skribent med ett ärende börjar med ärendet.
 
@@ -45,7 +47,7 @@ Markörerna står i nummerordning. Grupperna nedan är ett register, inte en dis
 
 **Fix:** Skriv vad iakttagelsen betyder, som en egen huvudsats. Går det inte att formulera, fanns ingen analys.
 
-### 4. Vaga attributioner och auktoriteter
+### 4. Vaga auktoriteter
 
 **Kännetecken:** experter menar, forskning visar, branschkällor pekar på, allt fler ser, det har konstaterats, ledande aktörer.
 
@@ -53,13 +55,13 @@ Markörerna står i nummerordning. Grupperna nedan är ett register, inte en dis
 
 **Fix:** Namnge källan, årtalet och helst var den finns. Har skribenten ingen källa, stryk påståendet eller skriv det som sin egen iakttagelse. Hitta aldrig på en källa.
 
-### 5. Passiv röst som falsk formalitet
+### 5. Passiv formalitet
 
-**Kännetecken:** det kan konstateras att, det bör påpekas att, det är viktigt att notera att, det har visat sig att, hänsyn bör tas till.
+**Kännetecken:** det kan konstateras att, det bör påpekas att, det är viktigt att notera att, det är tydligt att, det råder ingen tvekan om att, det har visat sig att, hänsyn bör tas till.
 
-**Varför:** Passiven döljer vem som tycker något, och opersonligheten läses som myndighet. I klarspråk är den i stället ett fel: mottagaren behöver veta vem som gör vad.
+**Varför:** Konstruktionen döljer vem som tycker något, och opersonligheten läses som myndighet. I klarspråk är den i stället ett fel: mottagaren behöver veta vem som gör vad.
 
-**Fix:** Sätt en aktör framför verbet. "Vi ser att", "Du behöver", eller gå rakt på påståendet utan inledning.
+**Fix:** Sätt en aktör framför verbet. "Vi ser att", "Du behöver", eller gå rakt på påståendet utan inledning. Vanlig s-passiv är däremot naturlig svenska och får stå: "Fakturan skickas i början av månaden." Byt bara när passiven döljer en aktör som läsaren behöver känna till, och hitta aldrig på aktören. Säger utkastet inte vem som gör något, hör frågan hemma under **Kvar för dig**.
 
 ### 6. Nominaliseringsöverdrift
 
@@ -71,11 +73,11 @@ Markörerna står i nummerordning. Grupperna nedan är ett register, inte en dis
 
 ### 7. Anglifieringsimporter
 
-**Kännetecken:** ta ägarskap över, navigera förändringen, leverera värde, göra skillnad, skapa impact, på ett holistiskt sätt, i linje med.
+**Kännetecken:** ta ägarskap över, navigera förändringen, leverera värde, göra en skillnad, skapa impact, på ett holistiskt sätt, på daglig basis.
 
 **Varför:** Frasen är engelsk i varje led utom orden. Den går att översätta tillbaka utan förlust, vilket är hela testet.
 
-**Fix:** Byt till det svenska verb som gör jobbet: ansvara för, hantera, ge resultat, påverka, i sin helhet, enligt.
+**Fix:** Byt till det svenska uttryck som gör jobbet: ansvara för, hantera, ge resultat, göra skillnad, påverka, i sin helhet, varje dag. Etablerad affärssvenska som team, agenda och i linje med får stå, se `svenska-ord.md`.
 
 ### 8. Tretalsregeln och falsk balans
 
@@ -83,7 +85,7 @@ Markörerna står i nummerordning. Grupperna nedan är ett register, inte en dis
 
 **Varför:** Tre led låter fullständigt även när det tredje är tomt. Balansen låter nyanserad även när skribenten inte valt sida.
 
-**Fix:** Behåll det led som betyder något och stryk de andra. Avsluta balansgången med det du faktiskt menar.
+**Fix:** Behåll det led som betyder något och stryk de andra. Avsluta balansgången med skribentens slutsats, om den står i texten. Står den inte där: lägg frågan under **Kvar för dig** i stället för att välja sida åt skribenten.
 
 ### 9. Negativ parallellism
 
@@ -95,13 +97,13 @@ Markörerna står i nummerordning. Grupperna nedan är ett register, inte en dis
 
 ### 10. Sociala medier-fällor
 
-**Kännetecken:** "Jag delar en reflektion", "Låt mig vara ärlig", "#Innovation #Framtid #Ledarskap" staplade, "Håller du med?".
+**Kännetecken:** "Jag delar en reflektion", "Låt mig vara ärlig", "#Innovation #Framtid #Ledarskap" staplade, "Håller du med?". Samma platta fråga avslutar ofta artiklar och nyhetsbrev.
 
 **Varför:** Inlägget börjar med inläggets egen existens i stället för med det skribenten såg.
 
-**Fix:** Börja med händelsen, siffran eller misstaget. Ställ en fråga som bara någon i branschen kan svara på. Två hashtags räcker.
+**Fix:** Börja med händelsen, siffran eller misstaget, om utkastet har dem. Ställ en fråga som bara någon i branschen kan svara på. Två eller tre hashtags räcker, eller inga.
 
-### 11. Sycofantiska öppningar och avslutningar
+### 11. Fjäsk
 
 **Kännetecken:** "Vilken bra fråga!", "Det var en intressant vinkel", "Hoppas det här hjälper!", "Stort lycka till med projektet!".
 
@@ -117,7 +119,7 @@ Markörerna står i nummerordning. Grupperna nedan är ett register, inte en dis
 
 **Fix:** för att, eftersom, nu, om, kan.
 
-### 13. Överdriven osäkerhetssignalering
+### 13. Överdriven gardering
 
 **Kännetecken:** "det kan möjligen argumenteras att detta eventuellt skulle kunna ha en viss effekt under vissa förutsättningar".
 
@@ -125,7 +127,7 @@ Markörerna står i nummerordning. Grupperna nedan är ett register, inte en dis
 
 **Fix:** Säg vad som gäller. Är osäkerheten verklig, skriv ut skälet: "Vi vet inte, för testerna avbröts i fredags."
 
-### 14. Kunskapsavgränsningsklausuler
+### 14. Kunskapsavgränsningar
 
 **Kännetecken:** "Baserat på tillgänglig information", "Inom ramen för vad som är känt", "Det bör nämnas att uppgifterna kan ändras".
 
@@ -139,7 +141,7 @@ Markörerna står i nummerordning. Grupperna nedan är ett register, inte en dis
 
 **Varför:** Modellen undviker "är" eftersom det anses för enkelt. Resultatet blir en mening som låter som ett protokoll.
 
-**Fix:** Skriv "är", eller beskriv vad saken gör.
+**Fix:** Skriv "är", eller beskriv vad saken gör. Behåll "utgör" när det betyder andel: "Exporten utgör 30 % av intäkterna" är bra svenska.
 
 ### 16. Punktliste- och emojifeber
 
@@ -157,7 +159,7 @@ Markörerna står i nummerordning. Grupperna nedan är ett register, inte en dis
 
 **Fix:** Punkt, komma eller parentes. Se `typografi.md` för var `–` faktiskt hör hemma.
 
-### 18. "Inte bara X, utan även Y"
+### 18. Inte bara X, utan även Y
 
 **Kännetecken:** "Det är inte bara en plattform, utan även en partner", "Vi effektiviserar inte bara flödet, utan även organisationen".
 
@@ -165,7 +167,7 @@ Markörerna står i nummerordning. Grupperna nedan är ett register, inte en dis
 
 **Fix:** Skriv meningen om så att Y står själv. Kan den inte det, var Y ingen poäng.
 
-### 19. Moderna modord och säljfloskler
+### 19. Modeord och säljfloskler
 
 **Kännetecken:** sömlös, robust, skräddarsydd, spjutspets, i framkant, helhetslösning, nästa nivå, kraftfull.
 
@@ -173,7 +175,7 @@ Markörerna står i nummerordning. Grupperna nedan är ett register, inte en dis
 
 **Fix:** Beskriv funktionen: "synkar var femte minut", "tål 10 bar", "anpassad för tre till tio anställda".
 
-### 20. "Låt oss djupdyka" och metakommentarer
+### 20. Låt oss djupdyka
 
 **Kännetecken:** "Låt oss titta närmare på", "I det här avsnittet går vi igenom", "Innan vi börjar är det bra att känna till".
 
@@ -181,7 +183,7 @@ Markörerna står i nummerordning. Grupperna nedan är ett register, inte en dis
 
 **Fix:** Stryk metakommentaren. Börja på innehållet.
 
-### 21. Syntetisk tröst och påklistrad empati
+### 21. Syntetisk tröst
 
 **Kännetecken:** "Vi förstår att det här kan kännas överväldigande", "Det är helt naturligt att känna oro inför förändring".
 
@@ -191,7 +193,7 @@ Markörerna står i nummerordning. Grupperna nedan är ett register, inte en dis
 
 ### 22. Falsk sammanfattningsfeber
 
-**Kännetecken:** rubrikerna "Sammanfattningsvis", "Slutsats", "Viktiga lärdomar" i en text under 300 ord, eller en avslutande punkt som upprepar texten.
+**Kännetecken:** rubrikerna "Sammanfattningsvis", "Slutsats", "Viktiga lärdomar" i en text under 300 ord, en avslutande punkt som upprepar texten, eller en slutfras som "avslutningsvis kan vi konstatera att", "sammantaget" eller "framåt ser det lovande ut".
 
 **Varför:** Skoluppsatsens form. Läsaren var precis där.
 
@@ -205,13 +207,15 @@ Markörerna står i nummerordning. Grupperna nedan är ett register, inte en dis
 
 **Fix:** Läs meningen högt och fråga om du hade sagt den till någon över ett bord. Går den att översätta rakt tillbaka till engelska utan att något går förlorat, kom den därifrån. Utbyteslistan finns i `svenska-ord.md`.
 
+Det svåraste fallet är falska vänner, där ordet byter betydelse och inte bara ton: eventuellt för eventually, realisera för realize, biljon för billion. Där gäller faktaskyddet, och listan står i `svenska-ord.md`.
+
 ### 24. Engelska lånord med svensk ändelse
 
-**Kännetecken:** asken, caset, insighten, learnings, settingen, teamet (när det betyder gruppen i stället för laget).
+**Kännetecken:** asken, caset, insighten, learnings, settingen, scenarios.
 
-**Varför:** Samma mekanism som 23, men skarven syns. Modellen böjer det engelska substantivet som om det vore svenskt.
+**Varför:** Samma mekanism som 23, men skarven syns. Modellen böjer det engelska ordet som om det vore svenskt, eller behåller det engelska plural-s:et.
 
-**Fix:** frågan eller det du ber om, fallet, insikten, lärdomar, inställningen.
+**Fix:** frågan eller det du ber om, fallet, insikten, lärdomar, inställningen, scenarier. Etablerade lånord som team och agenda är svenska och får stå.
 
 ### 25. Kanslisvenska verb
 
@@ -245,7 +249,7 @@ Markörerna står i nummerordning. Grupperna nedan är ett register, inte en dis
 
 **Fix:** Sätt en avsändare med något den har sett: vem som sa det, när, och vad som hände. Finns ingen sådan i underlaget, lägg frågan under **Kvar för dig** i stället för att hitta på en.
 
-### 29. Retorisk fråga som besvaras direkt
+### 29. Retorisk fråga som besvaras
 
 **Kännetecken:** "Vad betyder det här för er? Det betyder att ...", "Varför då? Därför att ...".
 
@@ -277,9 +281,9 @@ Markörerna står i nummerordning. Grupperna nedan är ett register, inte en dis
 
 **Fix:** Bryt symmetrin av innehållsskäl. Låt ett stycke löpa långt för att resonemanget kräver det. Skriv listan som prosa om den inte är en riktig lista. Läs bara styckelängderna och första ordet i varje stycke: låter det som en komponerad sekvens eller som någon som förklarar något?
 
-### 33. Engelsk typografi i svensk text
+### 33. Engelsk typografi
 
-**Kännetecken:** `“ord”` eller `"ord"` i stället för `”ord”`, `12.5%` i stället för `12,5 %`, `1,450` i stället för `1 450`, "Nya Funktioner I Faktureringen", punkt efter rubrik, "Juli 30, 2026", `Jakob's`.
+**Kännetecken:** `“ord”` eller `"ord"` i stället för `”ord”`, `12.5%` i stället för `12,5 %`, `1,450` i stället för `1 450`, "Nya Funktioner I Faktureringen", punkt efter rubrik, "Juli 30, 2026", `Jakob's`, komma före och i en uppräkning ("pris, leveranstid, och kvalitet"), "mellan 3–5".
 
 **Varför:** Tecknen avslöjar vilket språk texten tänktes på. En svensk läsare reagerar på dem även när varje ord är riktigt.
 
@@ -295,8 +299,12 @@ Auktoritativa svenska källor används för formreglerna och för ordval som gå
   https://www.isof.se/svenska-spraket/klarsprak
 - **Regeringskansliet, Svarta listan** (SB PM 2011:1, fjärde upplagan): ord och fraser som kan ersättas i författningsspråk. Grund för mönster 25.
   https://www.regeringen.se/contentassets/7ea8845f72304d098640272782e5bc26/svarta-listan---ord-och-fraser-som-kan-ersattas-i-forfattningssprak/
-- **Språkrådet, Svenska skrivregler** och kortversionen Snabba skrivregler: tankstreck, citattecken, siffror eller bokstäver, decimaler och tusental, rubriker, punktlistor, fetstil. Grund för mönster 16, 17 och 33.
-  https://writing.chalmers.se/wp-content/uploads/2024/06/Snabba-skrivregler-Sprakradet-1.pdf
+- **Språkrådet, Svenska skrivregler** och kortversionen Snabba skrivregler (Isof 2024): tankstreck, citattecken, kommatering, siffror eller bokstäver, intervall, decimaler och tusental, datum, genitiv, rubriker, punktlistor, fetstil. Grund för mönster 16, 17 och 33 och för `typografi.md`.
+  https://isof.se/snabba-skrivregler (pdf: https://writing.chalmers.se/wp-content/uploads/2024/06/Snabba-skrivregler-Sprakradet-1.pdf)
+- **TT-språket**, avsnitten Välj rätt ord och Engelska till svenska: värdeladdade ord (tack vare, förväntas, bör och ska, chans och risk), procent och procentenheter, falska vänner, onödig obestämd artikel och engelskt plural-s. Grund för de avsnitten i `svenska-ord.md`. TT skriver nyhetsspråk, så stilval som "sade" och utskrivet "procent" tas inte över.
+  https://tt-spraket.tt.se/
+- **Språkbanken Text, Korp**: sökbara korpusar som visar hur ofta en fras faktiskt används. Språkrådet rekommenderar Korp för egna undersökningar av språkbruket (Snabba skrivregler, avsnitt 8.3.2). Grund för `frekvenstest.md`.
+  https://spraakbanken.gu.se/korp/
 - **Språktidningen** om du-reformen 1967: varför "ni" till en enskild person är en registerfråga. Grund för tilltalsavsnittet i `svenska-ord.md`.
   https://spraktidningen.se/artiklar/du-reformen-som-blev-en-jag-revolution/
 - **Yakura m.fl., arXiv:2409.01754**: ord som ChatGPT föredrar ökade mätbart i spontant tal efter lanseringen, och försökspersoner tog över modellens ordval. Stöd för mekanismen bakom mönster 1, 3, 7 och 19: det är ordvalet som sprider sig, inte listan i sig.

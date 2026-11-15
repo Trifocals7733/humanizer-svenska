@@ -9,26 +9,30 @@ Före du genererar, redigerar eller granskar svensk text i det här projektet: l
 
 ## Innan du ändrar något
 
-Rör aldrig sakuppgifter. Belopp, datum, namn, siffror och källor står som skribenten skrev dem. Hitta aldrig på en siffra, en källa eller ett exempel för att göra texten konkret. Saknas uppgiften: lämna meningen allmän och säg det till användaren.
+Rör aldrig sakuppgifter. Belopp, datum, namn, siffror och källor står som skribenten skrev dem. Hitta aldrig på en siffra, en källa, ett exempel eller en ståndpunkt för att göra texten konkret. Saknas uppgiften: lämna meningen allmän och säg det till användaren.
 
-Skribentens röst vinner över stilreglerna. Lämna starka meningar i fred. Gör minsta effektiva ändring, inte en omskrivning.
+Skribentens röst vinner över stilreglerna. Lämna starka meningar i fred. Gör minsta effektiva ändring, inte en omskrivning, och gör inte texten vassare eller mer tvärsäker än skribenten.
 
 ## Mönster att ta bort
 
-- Uppblåst betydelse: avgörande, banbrytande, vittnar om, paradigmskifte.
-- Landskapsinledning: i en alltmer digitaliserad värld, spelplanen ritas om.
-- Falsk analys: belyser vikten av, understryker behovet av.
-- Vag auktoritet: experter menar, forskning visar.
-- Passiv formalitet: det kan konstateras att, det bör påpekas att.
-- Nominalisering: genomförandet av, säkerställandet av.
-- Anglifiering: ta ägarskap över, navigera förändringen, leverera värde.
+- Signifikansuppblåsning: avgörande, banbrytande, vittnar om, paradigmskifte.
+- Landskaps- och trenduppramning: i en alltmer digitaliserad värld, spelplanen ritas om.
+- Participfraser som falsk analys: belyser vikten av, understryker behovet av.
+- Vaga auktoriteter: experter menar, forskning visar.
+- Passiv formalitet: det kan konstateras att, det bör påpekas att. Vanlig s-passiv får stå.
+- Nominaliseringsöverdrift: genomförandet av, säkerställandet av.
+- Anglifieringsimporter: ta ägarskap över, navigera förändringen, leverera värde.
 - Kopulaundvikande: utgör, representerar, fungerar som. Skriv är.
 - Negativ parallellism: det handlar inte om X, det handlar om Y.
-- "Inte bara X, utan även Y".
+- Inte bara X, utan även Y.
 - Ord-för-ord-svenska: adressera ett problem, spendera tid, på samma sida.
-- Kanslisvenska: erhålla, nyttja, erfordras.
-- Modeord: sömlös, robust, skräddarsydd, i framkant.
-- Tomma fraser: i syfte att uppnå, på grund av det faktum att, i nuläget.
+- Kanslisvenska verb: erhålla, nyttja, erfordras.
+- Modeord och säljfloskler: sömlös, robust, skräddarsydd, i framkant.
+- Utfyllnadsfraser: i syfte att uppnå, på grund av det faktum att, i nuläget.
+
+## Ord som byter betydelse
+
+Tack vare bara om något positivt, väntas om en prognos, teknik i stället för teknologi. Falska vänner som eventuellt för eventually och biljon för billion rättas bara när betydelsen är klar. Ska mot bör och procent mot procentenheter ändrar du inte själv: fråga.
 
 ## Rytm
 
@@ -39,10 +43,11 @@ Variera meningslängden kraftigt, utan mall. Variera fundamentet: svenskan har V
 - `–` är svenskt tankstreck. `—` är alltid fel. Utan mellanslag i intervall (9–18), med mellanslag runt inskjutningar. Sparsamt.
 - Citattecken: `”ord”`.
 - Decimalkomma och mellanslag i tusental: `12,5 %`, `1 450`. Väx aldrig om ett tal som står i utkastet.
+- Inget komma före och i uppräkningar.
 - Ingen title case i rubriker. Ingen punkt efter rubrik.
 - Emojis och fetstil först i varje punkt hör inte hemma i löptext.
 - Mejl, inte mail.
 
 ## När du svarar
 
-Börja med texten. Sedan **Vad jag ändrade** med ordagranna citat, sist **Kvar för dig** med det bara skribenten kan fylla i. Ingen inledande rapport om vad du tänker göra.
+Börja med texten. Sedan **Vad jag ändrade** med ordagranna citat, sist **Kvar för dig** med det bara skribenten kan fylla i. Ingen inledande rapport om vad du tänker göra. Skriver du ny text utan utkast: bara texten, med en hakparentes som `[datum]` där en uppgift saknas.

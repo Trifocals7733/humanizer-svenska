@@ -1,13 +1,16 @@
 ---
 name: humanizer-svenska
-version: 4.0.0
 description: >-
   Tar bort AI-genererade språkmönster ur svensk text och lämnar en mänsklig röst kvar.
-  Täcker affärstext, rapporter, artiklar, sociala medier, klarspråk, e-handel, rekrytering
-  och kunddialog. Använd när svensk text ska tvättas från AI-mönster, när någon frågar om
-  en text låter AI-genererad, när en svensk text ska granskas eller redigeras, eller när en
-  agent ska skriva svensk prosa som inte ska avslöja sig som modellskriven. Innehåller 33
-  namngivna mönster, svenska formregler, faktaskydd och en självkontroll som körs före svar.
+  Täcker mejl, affärstext, presentationer, rapporter, artiklar, sociala medier, klarspråk,
+  e-handel, rekrytering och kunddialog. Använd när svensk text ska tvättas från AI-mönster,
+  när någon frågar om en text låter AI-genererad, när en svensk text ska granskas eller
+  redigeras, och när en agent själv skriver svensk prosa som inte ska avslöja sig som
+  modellskriven. Innehåller 33 namngivna mönster, falska vänner och ord som ändrar
+  betydelsen, svenska formregler, faktaskydd och självkontroll.
+license: MIT
+metadata:
+  version: "4.1.0"
 ---
 
 # Humanizer Svenska
@@ -23,10 +26,10 @@ Standardläget är svenska. Är utkastet på engelska: redigera på engelska, oc
 Konflikter uppstår, och då avgör den här ordningen:
 
 1. **Sakuppgifter rörs aldrig.** Belopp, datum, namn, källor och åtaganden står som skribenten skrev dem.
-2. **Skribentens röst vinner över allt nedanför.** En stark mening som bryter mot en stilregel får stå. Rösten finns i utkastet. Reglerna finns i den här filen.
+2. **Skribentens röst vinner över allt nedanför.** En stark mening som bryter mot en stilregel får stå. Rösten finns i utkastet. Reglerna finns i den här filen. Det gäller ståndpunkterna också: du skriver fram skribentens och hittar inte på egna.
 3. **Formreglerna i `references/typografi.md` är fel, inte stil.** De vinner över rösten, eftersom `—` och `12.5%` inte är en röst.
 4. **Mönsterbatteriet i avsnitt 6** är kännetecken att väga, inte förbud att verkställa mekaniskt.
-5. **Exemplen i den här filen** är illustrationer, aldrig innehåll att låna.
+5. **Exemplen i den här filen, i `genres/` och i `examples/`** är illustrationer, aldrig innehåll att låna.
 
 Har skribenten lämnat en egen stilbeskrivning eller tonprofil: läs den först, och låt den slå allt utom punkt 1 och 3.
 
@@ -34,9 +37,9 @@ Har skribenten lämnat en egen stilbeskrivning eller tonprofil: läs den först,
 
 ## 2. Vad du lämnar tillbaka
 
-Tre lägen, samma fyra regler: börja med texten, ingen rapport om vad du läst eller tänker göra, inga ursäkter, inget "hoppas det hjälper".
+Fyra lägen, samma fyra regler: börja med texten, ingen rapport om vad du läst eller tänker göra, inga ursäkter, inget "hoppas det hjälper".
 
-**Snabbläge** (`--snabb`): bara den färdiga texten. Inga förklaringar, ingen lista, ingen analys.
+**Snabbläge** (`--snabb`): bara den färdiga texten. Inga förklaringar, ingen lista, ingen analys. Faktaskyddet gäller ändå: saknas en uppgift står meningen kvar allmän, och du fyller inte i något.
 
 **Standardläge:**
 
@@ -48,16 +51,18 @@ Tre lägen, samma fyra regler: börja med texten, ingen rapport om vad du läst 
 **Granskningsläge** (`--granska`): skriv inte om texten. En punkt per mönster, i den här formen:
 
 ```
-Mönstrets namn. "Citerad rad." Fix: några ord.
+Mönstrets namn. ”Citerad rad.” Fix: några ord.
 ```
 
-Mönsternamnet hämtas ur `references/monster.md` ordagrant. Hittar du ingen markör som passar: beskriv iakttagelsen utan att uppfinna ett mönsternamn. Varje punkt får ett eget citat, även de som gäller rytm och struktur. Skriv aldrig "varje stycke" eller "genomgående" utan att kunna räkna upp vilka. Avsluta med ett **AI-avtryck 1–10**, där 1 är en text som bär en människa och 10 är en text som ingen människa skulle skicka. Betyget är ditt redaktörsomdöme, inte en mätning: skriv vad som drar upp det, och varför just de sakerna syns.
+Mönsternamnet hämtas ordagrant ur tabellen i avsnitt 6, som har samma namn som rubrikerna i `references/monster.md`. Hittar du ingen markör som passar: beskriv iakttagelsen utan att uppfinna ett mönsternamn. Varje punkt får ett eget citat, även de som gäller rytm och struktur. Skriv aldrig "varje stycke" eller "genomgående" utan att kunna räkna upp vilka. Avsluta med ett **AI-avtryck 1–10**, där 1 är en text som bär en människa och 10 är en text som ingen människa skulle skicka. Betyget är ditt redaktörsomdöme, inte en mätning: skriv vad som drar upp det, och varför just de sakerna syns.
+
+**Eget skrivande** (när du själv skriver svensk text och inget utkast finns att redigera): skriv enligt reglerna här och kör självkontrollen tyst. Leverera bara texten. Saknas en uppgift som texten behöver, som ett datum, ett belopp eller ett namn: skriv en hakparentes, `[datum]`, i stället för att hitta på den.
 
 ---
 
 ## 3. Arbetsgången: fyra pass
 
-Har du inget utkast: be om det, och fråga inte om något annat förrän det finns. Är det oklart vem som ska läsa texten och var den ska publiceras: ställ en fråga, inte fem.
+Ska du redigera men har inget utkast: be om det, och fråga inte om något annat förrän det finns. Är det oklart vem som ska läsa texten och var den ska publiceras: ställ en fråga, inte fem. I eget skrivande gäller passen också, på din egen första version.
 
 Gör passen i ordning. Ett i taget, inte allt på en gång.
 
@@ -89,17 +94,17 @@ Det här avsnittet finns för att en regelstyrd redigering lätt producerar text
 
 ## 5. Anti-AI-motorn
 
-Att byta ut enstaka ord räcker inte. Läsare och detektorer reagerar på strukturen. Fem principer:
+Att byta ut enstaka ord räcker inte. En van läsare reagerar på strukturen. Sex principer:
 
 ### A. Meningslängden ska variera
 
-Modeller ligger bekvämt mellan 14 och 22 ord. Människan gör tvära kast. En mening på fyra ord. Sedan en som tar tjugofem för att tanken kräver det. Sedan ett konstaterande. Tänk inte "kort, lång, kort" som mall, det blir en ny sorts metronom. Låt innehållet styra längden, och kontrollera sedan fördelningen.
+Modelltext lägger sig gärna i ett smalt band, ofta 15–20 ord per mening. Människan gör tvära kast. En mening på fyra ord. Sedan en som tar tjugofem för att tanken kräver det. Sedan ett konstaterande. Tänk inte "kort, lång, kort" som mall, det blir en ny sorts metronom. Låt innehållet styra längden, och kontrollera sedan fördelningen.
 
 Varning: en rad korta, huggande meningar i följd är också en markör. Variation betyder variation, inte hackighet.
 
 ### B. Fundamentet ska flyttas
 
-Svenskan har V2-ordföljd, alltså finit verb på andra plats, och fundamentet är fritt. Modellen sätter nästan alltid subjektet först. Flytta in tidsuttryck, bisatser, villkor eller objekt i början av meningen när det passar:
+Svenskan har V2-ordföljd, alltså finit verb på andra plats, och fundamentet är fritt. Modellen sätter påfallande ofta subjektet först. Flytta in tidsuttryck, bisatser, villkor eller objekt i början av meningen när det passar:
 
 - *Tidsuttryck:* "Förra veckan tappade vi två kunder."
 - *Villkor:* "Om marginalen inte håller finns ingen tid att spara."
@@ -116,17 +121,21 @@ Modeller väljer det statistiskt mest sannolika ordet, och det är alltid det al
 
 ### D. Typografin ska vara svensk
 
-`—` bort. Svenska citattecken. Decimalkomma. Mellanslag i tusental. Inga emojis i löptext. Ingen fetstil i varje punkt. Reglerna står i `references/typografi.md` och gäller även dina egna rader i svaret.
+`—` bort. Svenska citattecken. Decimalkomma. Mellanslag i tusental. Inget komma före och i en uppräkning. Inga emojis i löptext. Ingen fetstil i varje punkt. Reglerna står i `references/typografi.md` och gäller även dina egna rader i svaret.
 
-### E. Någon ska tycka något
+### E. Någon ska tycka något, och det är skribenten
 
-En text utan avsändare, utan iakttagelse och utan slutsats är den mest modellika text som finns. Våga prioritera bort. Våga säga att något inte fungerar. Läsaren behöver en person som har bestämt sig.
+En text utan avsändare, utan iakttagelse och utan slutsats är den mest modellika text som finns. Finns skribentens ståndpunkt i utkastet: skriv fram den rakt, och stryk garderingar som inte bär en verklig osäkerhet. Finns den inte: hitta inte på en. Skriv frågan under **Kvar för dig**. Gör inte texten vassare eller mer tvärsäker än skribenten är.
+
+### F. Orden ska betyda det skribenten menar
+
+Modeller väljer gärna ord som lägger till en värdering eller bär den engelska betydelsen: *tack vare* om något negativt, *förväntas* om en prognos, *eventuellt* i betydelsen till slut. Rätta när utkastet självt visar vad som menas. Hänger ordet ihop med en siffra eller ett åtagande, som *ska* mot *bör*, *procent* mot *procentenheter* eller *biljon* mot *miljard*: låt det stå och skriv frågan under **Kvar för dig**. Listorna står i `references/svenska-ord.md`.
 
 ---
 
 ## 6. Mönsterbatteriet: 33 markörer
 
-Fullständig katalog med kännetecken, förklaring, fix och källor: `references/monster.md`. Läs den när du ska namnge ett mönster, förklara varför, eller granska.
+Fullständig katalog med kännetecken, förklaring, fix och källor: `references/monster.md`. Läs den när du ska förklara varför, eller granska. Namnen i tabellen är desamma som rubrikerna där.
 
 | # | Mönster | Typiskt |
 |---|---|---|
@@ -134,17 +143,17 @@ Fullständig katalog med kännetecken, förklaring, fix och källor: `references
 | 2 | Landskaps- och trenduppramning | i en alltmer digitaliserad värld, spelplanen ritas om |
 | 3 | Participfraser som falsk analys | belyser vikten av, understryker behovet av, synliggör |
 | 4 | Vaga auktoriteter | experter menar, forskning visar, branschen pekar på |
-| 5 | Passiv formalitet | det kan konstateras att, det bör påpekas att |
+| 5 | Passiv formalitet | det kan konstateras att, det bör påpekas att. Vanlig s-passiv får stå |
 | 6 | Nominaliseringsöverdrift | genomförandet av, säkerställandet av, ett tillhandahållande av |
 | 7 | Anglifieringsimporter | ta ägarskap över, navigera förändringen, leverera värde |
 | 8 | Tretalsregeln och falsk balans | snabbt, enkelt och effektivt; å ena sidan utan slutsats |
 | 9 | Negativ parallellism | det handlar inte om X, det handlar om Y |
 | 10 | Sociala medier-fällor | jag delar en reflektion, hashtagstaplar, håller du med? |
-| 11 | Sycofancy | vilken bra fråga, hoppas det hjälper, stort lycka till |
+| 11 | Fjäsk | vilken bra fråga, hoppas det hjälper, stort lycka till |
 | 12 | Utfyllnadsfraser | i syfte att uppnå, på grund av det faktum att, i nuläget |
-| 13 | Överdriven hedging | det kan möjligen argumenteras att detta eventuellt |
+| 13 | Överdriven gardering | det kan möjligen argumenteras att detta eventuellt |
 | 14 | Kunskapsavgränsningar | baserat på tillgänglig information, inom ramen för |
-| 15 | Kopulaundvikande | utgör, representerar, fungerar som |
+| 15 | Kopulaundvikande | utgör, representerar, fungerar som. Utgör får stå om andelar |
 | 16 | Punktliste- och emojifeber | emoji i varje punkt, fetstil först i varje led |
 | 17 | Tankstrecksfrossa | `—` mitt i meningar, två gånger per stycke |
 | 18 | Inte bara X, utan även Y | det är inte bara en plattform, utan även en partner |
@@ -162,7 +171,7 @@ Fullständig katalog med kännetecken, förklaring, fix och källor: `references
 | 30 | Kolon som spänningsknep | nominalfras: poängen, med liten bokstav |
 | 31 | Den djupa slutraden | en byggd aforism som sista mening |
 | 32 | Jämna stycken och inläggets form | alla stycken en till tre meningar, kort slutrad |
-| 33 | Engelsk typografi | `“ord”`, `12.5%`, title case, punkt efter rubrik |
+| 33 | Engelsk typografi | `“ord”`, `12.5%`, title case, punkt efter rubrik, komma före och |
 
 ---
 
@@ -184,7 +193,8 @@ Texttypen styr vad som räknas som bra, inte vilka ord som ska bort. Läs rätt 
 
 | Texttyp | Guide |
 |---|---|
-| Affärsmejl, offert, förslag | `genres/affarstext.md` |
+| Mejl, offert, förslag | `genres/affarstext.md` |
+| Presentation och talmanus | `genres/presentation.md` |
 | Utredning, analys, rapport | `genres/rapport.md` |
 | Krönika, debatt, tankeledare | `genres/artikel.md` |
 | LinkedIn och sociala medier | `genres/sociala-medier.md` |
@@ -200,9 +210,10 @@ Texttypen styr vad som räknas som bra, inte vilka ord som ska bort. Läs rätt 
 | Fil | Läs den när |
 |---|---|
 | `references/monster.md` | du ska namnge ett mönster exakt, förklara varför något är fel, eller granska |
-| `references/svenska-ord.md` | du behöver ett konkret utbyte, eller ska svara på varför ett ord ska bort |
+| `references/svenska-ord.md` | du behöver ett konkret utbyte, ska svara på varför ett ord ska bort, eller misstänker en falsk vän |
 | `references/typografi.md` | texten ska levereras, eller du är osäker på tecken, siffror och rubriker |
 | `references/sjalvkontroll.md` | alltid, före varje svar |
+| `references/frekvenstest.md` | du tvekar om en fras är etablerad svenska och har webbåtkomst |
 | `examples/` | du är osäker på hur hårt du får gå fram. Sex fullständiga före- och eftertexter |
 | `tests/benchmark_prompts.md` | du ska mäta en modell mot standarden, eller köra ett regressionstest |
 
@@ -210,4 +221,4 @@ Texttypen styr vad som räknas som bra, inte vilka ord som ska bort. Läs rätt 
 
 ## 10. Före svar
 
-Kör `references/sjalvkontroll.md` och svara godkänt eller ej godkänt på varje punkt. Vid ej godkänt: rätta och kör om. Listan är intern. Det användaren ser är texten, **Vad jag ändrade** och **Kvar för dig**.
+Kör `references/sjalvkontroll.md` och svara godkänt eller ej godkänt på varje punkt. Vid ej godkänt: rätta och kör om. Listan är intern. Vad användaren ser bestäms av läget i avsnitt 2.

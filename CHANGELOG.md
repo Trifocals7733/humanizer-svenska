@@ -7,7 +7,62 @@ Versioning follows [Semantic Versioning](https://semver.org/).
 
 ---
 
-## [4.0.0] - 2026-12-01
+## [4.1.0] - 2026-11-16
+
+### Sammanfattning
+
+Genomgång av hela skillen, med det bästa från [nordefors-max/claude-humanizer-svenska](https://github.com/nordefors-max/claude-humanizer-svenska) v3.1.0 inbyggt under faktaskyddet. Nytt är falska vänner och ord som ändrar betydelsen, ett läge för agentens eget skrivande, en guide för presentationer och ett valfritt frekvenstest mot Språkbankens korpusar. Genomgången hittade också fel i standarden själv: exempel som fortfarande hittade på innehåll, mönsternamn som inte stämde mellan filerna och en genitivregel som Språkrådet inte har.
+
+### Varför
+
+Upstreams v3.1.0 innehöll regler som standarden saknade, och flera av dem rör faktaskyddet direkt. *Biljon* för *billion* är fel med en faktor tusen, och *ska* i stället för *bör* gör ett förslag till ett beslut. Reglerna är omskrivna, kontrollerade mot TT-språket och Språkrådet, och anpassade så att agenten rättar det som utkastet självt avgör och frågar om resten.
+
+Genomgången visade också att regeln ”Någon ska tycka något” lockade fram påhittade ståndpunkter. Debattartikeln i `examples/` hade fått en ny tes som skribenten aldrig skrev. Ståndpunkten är nu uttryckligen skribentens.
+
+### Added
+
+- **Falska vänner** i `references/svenska-ord.md`: teknologi, ledarskap, massiv, familjär med, eventuellt, realisera, biljon och provisorisk.
+- **Ord som säger mer än du menar:** förväntas och väntas, tack vare och på grund av, chans och risk, mindre och färre, ska och bör, procent och procentenheter. Med en regel för vilka som går att rätta direkt och vilka som går till **Kvar för dig**.
+- **Grammatik från engelskan:** onödig obestämd artikel och engelskt plural-s.
+- **Stel affärssvenska:** gällande som preposition, samtliga, såsom, emellertid och andra ord utanför Svarta listan.
+- **Läget Eget skrivande** i `SKILL.md`: när agenten själv skriver svensk text levererar den bara texten, kör självkontrollen tyst och skriver en hakparentes där en uppgift saknas. Beskrivningen lovade det redan, men arbetsgången bad om ett utkast som inte fanns.
+- **Princip F i anti-AI-motorn:** orden ska betyda det skribenten menar.
+- **`genres/presentation.md`:** rubriken som budskap, en poäng per bild, talmanus som tal.
+- **Mejlavsnitt** i `genres/affarstext.md`: ämnesrad, första meningen, ett ärende per mejl.
+- **`references/frekvenstest.md`:** hur en tveksam fras jämförs mot Språkbankens korpusar via Korp, med egna mätningar från november 2026, frågorna som gav dem och testets begränsningar.
+- **Kommatering, utropstecken och fler sifferregler** i `references/typografi.md`: inget komma före och i uppräkningar, fullständiga intervall, aldrig mellan 9–13, plural efter decimaltal, mellanslag före enheter, datum som står för sig.
+- **Test 6 och 7** i `tests/benchmark_prompts.md`: ord som ändrar betydelsen, och eget skrivande.
+- **Tre nya punkter i självkontrollen**, som nu har 52: falska vänner och värdeord, skribentens ståndpunkt, komma före och.
+- **Medvetna val och begränsningar** i README, och en rad om projektets ursprung.
+
+### Changed
+
+- **Mönstrens namn är enhetliga.** Rubrikerna i `references/monster.md` är namnen, och tabellen i `SKILL.md`, README, AGENTS.md, plattformsfilerna och exemplen använder samma. Förut hade 17 av 33 mönster olika namn i olika filer, fast granskningsläget krävde att namnet hämtades ordagrant. Två namn bytte till svenska: *Sycofancy* heter **Fjäsk** och *Överdriven hedging* heter **Överdriven gardering**.
+- **Ståndpunkten är skribentens.** Princip E heter nu ”Någon ska tycka något, och det är skribenten”. Saknas en ståndpunkt i utkastet hamnar frågan under **Kvar för dig**. Samma ändring i mönster 8, AGENTS.md, plattformsfilerna och självkontrollen.
+- **Passiv formalitet** skiljer nu på dold aktör och vanlig s-passiv, som får stå. En aktör som utkastet inte nämner hittas inte på.
+- **Utgör** får stå när det betyder andel.
+- **Göra skillnad** är svenska. Anglicismen är *göra en skillnad*. **Teamet** och **i linje med** är etablerad affärssvenska och är strukna ur mönster 7 och 24.
+- **Snabbläget** säger uttryckligen att faktaskyddet gäller även när ingen **Kvar för dig** visas.
+- **Exemplen är rättade.** Debattartikeln skriver fram skribentens tes i stället för en ny. LinkedIn-inlägget påstår inte längre att verktygen ändrade arbetssättet och har bara hashtags ur råtexten. Bygglovsbrevet behåller kravet på fackmannamässiga ritningar och hänvisar inte till en tidsfrist som inte står i brevet. Affärsmejlet och rapporten har inga tillägg kvar, och rapporten nämner hållbarhet igen. Platsannonsen behåller ”komplexa” och svenskans ”från ax till limpa”.
+- **README:s snabbtitt** visar nu en text där varje uppgift i efterversionen fanns i förversionen. Den förra efterversionen hittade på API:t, konsulterna och synkintervallet. Påståendet att 80 % av modellens meningar börjar med subjekt och verb saknade källa och är struket.
+- **Plattformsfilerna** har fått ståndpunktsregeln, ord som byter betydelse och kommaregeln. ChatGPT-versionen för *Anpassa instruktioner* håller fortfarande gränsen på 1 500 tecken.
+- **Frontmatter** följer Agent Skills-specen: `version` ligger under `metadata`, och `license` är tillagd.
+
+### Fixed
+
+- **Genitiv:** apostrof används inte ens efter s, x och z, enligt Snabba skrivregler (2024). Lars bok, inte Lars' bok.
+- **Granskningsmallen** använde raka citattecken, och ChatGPT-versionen skrev ”Citerat rad”.
+- **Stavfel i en svensk språkstandard:** huruwida och huruwidare blev huruvida, systempromptern blev systemprompten, en klockslag blev ett klockslag, ingen kopulaundvikande blev inget kopulaundvikande.
+- **Rubriker med title case och &** i genreguiderna, README, AGENTS.md och testfilen följer nu standardens egen regel, och AGENTS.md har inget `—` i rubriken längre.
+- **Klonadressen** i `platforms/claude/README.md` pekade på ett repo som inte finns.
+- **Ord som standarden själv förbjuder** stod i dokumentationen: sömlöst, em-dashes, enorm trovärdighet, när produkten skiner, och en LinkedIn-krok som slutade med ”Här är varför.”
+- **README motsade sig själv** om fundamentet: samma punkt förbjöd att mer än hälften av meningarna börjar med subjekt och verb och sa sedan att det inte finns någon kvot. Kvoten är struken.
+- **Meningslängden** angavs som 14–22 ord i en fil och 15–20 i en annan. Nu står det 15–20 överallt, som en iakttagelse och inte en mätning.
+- **Datumet för 4.0.0** stod som 2026-12-01. Versionen kom 2026-11-02.
+
+---
+
+## [4.0.0] - 2026-11-02
 
 ### Sammanfattning
 
